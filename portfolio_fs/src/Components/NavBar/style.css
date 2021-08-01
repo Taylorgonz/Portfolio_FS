@@ -1,0 +1,23 @@
+
+
+.navbarTitle {
+    padding-left: 20px;
+    
+}
+  
+.navLinks {
+    font-family: 'Source Code Pro', monospace;
+   
+}
+
+.navLinks {
+    margin-left:auto;
+    margin-right: 30px;
+    display: flex;
+    word-spacing: 0px;
+}
+
+.linkNav {
+    margin-right: 60px;
+}
+
