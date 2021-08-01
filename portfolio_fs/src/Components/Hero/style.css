@@ -1,0 +1,19 @@
+.heroImg {
+    background-image: url("./images/codingPortrait.JPG");
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroText {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px #000;
+    
+   
+}
