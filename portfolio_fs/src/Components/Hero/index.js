@@ -11,12 +11,17 @@ const Hero = () => {
         <Container className="p-0" fluid={true}>
 
             <div className="heroImg">
-                <Navbar/>
-                <h1 className="heroText"> Web Developer / Photographer </h1>
+                <Navbar />
+                <Container className='p-0 heroContainer' >
+                    <h1 className="heroText"> Designer </h1>
+                    <h1 className="heroText"> Photographer </h1>
+                    <h1 className="heroText"> Web Developer </h1>
+
+                </Container>
 
             </div>
 
-           
+
         </Container>
     )
 }

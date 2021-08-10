@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'Neon';
+    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
 .navTitle {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 800;
+    font-family: 'Neon';
+    font-weight: bold;
+    font-size: 50px;
     color: white;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px rgb(230, 43, 26);
 }
 
 
@@ -10,9 +18,10 @@
     margin-left:auto;
     display: flex;
     word-spacing: 0px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'raleway', sans-serif;
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px rgb(230, 43, 26);
+   
 }
 
 .leftLink {
