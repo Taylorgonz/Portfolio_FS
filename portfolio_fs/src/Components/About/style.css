@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Neon';
+    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  div.aboutContainer {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      scroll-snap-align: start;
+  }
+  h2.aboutTitle {
+      font-family: "Neon";
+      font-size: 60px;
+      text-align: center;
+      margin-top: 40px;
+      color:rgb(230, 43, 26);
+      border-bottom:2px solid rgb(230, 43, 26);
+  }
+
+  p {
+      font-family: 'Raleway', sans-serif; 
+      font-weight: 600;
+      
+  }
+
+  img.aboutImage {
+      height: 75vh;
+      padding: 5px;
+      border: 4px solid rgb(230, 43, 26);
+      margin-right: 50px;
+      border-radius: 5px;
+  }
+
+  
+
+  @media screen and (max-width: 400px) {
+
+    img.aboutImage {
+        margin:0px;
+        height: 50vh;
+    }
+  }
