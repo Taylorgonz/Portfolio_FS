@@ -4,6 +4,12 @@
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
   }
+@font-face {
+    font-family: 'Archive';
+    src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
 
 
 .heroImg {
@@ -16,26 +22,37 @@
 }
 
 .heroTitle {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 60; 
-    color: #fff;
-    padding: 15px;
-    
+    color: #eee;
+    font-family: 'Neon';
+    font-weight: 600;
+    font-size: 90px;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-shadow: 2px 2px 3px rgb(230, 43, 26);
+    margin-top: 25px;
+}
+.titleUnderline{
+    border: 2px solid #eee;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 570px;
+    margin-bottom: 100px;
+    margin-top: 0px;
+    box-shadow: 2px 2px 3px rgb(230, 43, 26);
 }
 
 .heroText {
     color: white;
     font-family: 'Neon';
-    font-weight: 700;
+    font-weight: 500;
     font-size: 80px;
     margin-bottom: 10px;
     padding: 10px;
     text-shadow: 2px 2px 3px rgb(230, 43, 26);
     /* border-bottom: 3px solid white; */
     /* width: 45%; */
-   
-    
     
 }
 div.heroContainer {
@@ -43,7 +60,7 @@ div.heroContainer {
     margin-left: 100px;
     flex-direction: column;
     text-align: left;
-    margin-top: 150px;
+    /* margin-top: 150px; */
    
     
 }
@@ -102,12 +119,33 @@ div.heroContainer {
 
     div.heroContainer{
         margin-left:0px;
-        margin-top: 200px;
+        
         
     }
 
     .heroText {
         text-align: center;
         font-size: 50px;
+    }
+
+    .heroTitle {
+        text-align: center;
+        font-size: 55px;
+        margin-top: 0;
+        
+    }
+
+   
+    .titleUnderline{
+        border: 3px solid white;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 150px;
+       
+        
     }
 }

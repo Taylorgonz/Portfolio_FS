@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Neon';
+    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: 'Archive';
+    src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  .photographyContainer {
+      height: 100vh;
+      font-family: 'Neon';
+      color: rgb(230, 43, 26);
+      text-align: center;
+      margin-top: 20px;
+  }

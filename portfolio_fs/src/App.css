@@ -1,8 +1,8 @@
-.App {
-  scroll-snap-type: mandatory;
+.container {
+  scroll-snap-type: ymandatory;
 }
 
-.child {
+section.child {
   scroll-snap-align: start;
 }
 

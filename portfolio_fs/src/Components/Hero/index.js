@@ -8,11 +8,13 @@ const Hero = () => {
 
 
     return (
-        <Container className="p-0" fluid={true}>
+        <Container id="heroTop" className="p-0" fluid={true}>
 
             <div className="heroImg">
-                <h1 className="heroTitle">TaylorGonz</h1>
+                {/* <h1 className="heroTitle">TaylorGonz</h1> */}
                 <Container className='p-0 heroContainer' >
+                    <h1 className="heroTitle"> Taylor Gonz </h1>
+                    <div className='titleUnderline'></div>
                     <h1 className="heroText"> Designer </h1>
                     <h1 className="heroText"> Photographer </h1>
                     <h1 className="heroText"> Web Developer </h1>
