@@ -1,7 +1,7 @@
 import React from "react"
 import "./style.css"
 import { Container } from "react-bootstrap";
-import Navbar from "../NavBar/index"
+
 
 
 const Hero = () => {
