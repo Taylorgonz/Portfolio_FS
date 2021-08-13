@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 const photoRoute = require("./photo-routes");
-const websiteRoute = require("./comment-routes");
+const websiteRoute = require("./website-routes");
 
 
 router.use("/photos", photoRoute);

@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
 
 
 // POST a new website
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     Websites.create({
         title: req.body.title,
         image: req.body.image,
@@ -41,7 +41,7 @@ router.post('/', withAuth, (req, res) => {
 
 
 // DELETE a website
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', (req, res) => {
     Websites.findOne({
         where: {
             id: req.params.id

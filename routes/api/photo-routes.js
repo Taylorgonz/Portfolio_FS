@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 
 
 // POST a new photo
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     Photo.create({
         url: req.body.url,
         userId: req.user.sub,
@@ -33,7 +33,7 @@ router.post('/', withAuth, (req, res) => {
 
 
 // DELETE a photo
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', (req, res) => {
     Photo.findOne({
         where: {
             id: req.params.id
