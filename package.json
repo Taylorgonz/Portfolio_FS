@@ -11,10 +11,7 @@
 		"install": "cd client && npm install",
 		"build": "cd client && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Taylorgonz/Portfolio_FS.git"
-  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
