@@ -12,18 +12,18 @@
                               'embedded-opentype', and 'svg' */
   }
 
-  .photographyContainer {
-      height: 100vh;
-      font-family: 'Neon';
-      color: rgb(230, 43, 26);
-      text-align: center;
-      margin-top: 20px;
-      scroll-snap-align: start;
+  form.photoForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
 
-  img.photoImages {
-      width: 200px;
-      height: 200px;
+  img.previewImage{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      width: 400px;
+      
       object-fit: cover;
       border-radius: 20px;
   }
