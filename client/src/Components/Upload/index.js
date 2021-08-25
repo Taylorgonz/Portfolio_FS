@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import "./style.css"
 import { Container, Row, Col } from "react-bootstrap";
 import API from '../../utils/API'
@@ -11,6 +11,7 @@ const Upload = () => {
     const [photos, setPhotos] = useState([]);
     const [previewPhotos, setPreviewPhotos] = useState("");
     const [loadedImage, setLoadedImage] = useState();
+    let photoCat =useRef()
 
     const getPics = () => {
         axios.get('/api/photos')
@@ -48,11 +49,12 @@ const Upload = () => {
 
             axios.post('/api/photos',
                 {
-                    'url': res.data.url
+                    'url': res.data.url,
+                    'category': res.data.category
                 }).then(
-                    getPics(),
                     setLoadedImage(""),
-                    setPreviewPhotos("")
+                    setPreviewPhotos(""),
+                    getPics()
                 )
 
         })
@@ -77,21 +79,29 @@ const Upload = () => {
                     uploadImage(e.target.files[0])
                 }}
                 />
-                <button  type="button" onClick={(e) => postImage()}>Submit</button>
+
+                <select ref={photoCat} name="category" id="category">
+                    <option value="portrait">Portrait</option>
+                    <option value="product">Product</option>
+                    <option value="lifestyle">Lifestyle</option>
+                </select>
+                <button type="button" onClick={(e) => postImage()}>Submit</button>
             </form>
 
-            {
-                previewPhotos &&
-                <img className="previewImage" src={previewPhotos} />
-            }
+            <div className='previewImageWrapper'>
+                {
+                    previewPhotos &&
+                    <img className="previewImage" src={previewPhotos} />
+                }
+            </div>
 
             <hr />
             {photos.map((photo, i) =>
-                <Col>
+                <div className='uploadedImagesWrapper'>
 
-                    <img className="photoImages" key={i} src={photo.url}></img>
+                    <img className="photoImagesUpload" key={i} src={photo.url}></img>
 
-                </Col>
+                </div>
             )}
 
 

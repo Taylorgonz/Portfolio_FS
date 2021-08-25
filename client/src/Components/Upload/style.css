@@ -27,3 +27,15 @@
       object-fit: cover;
       border-radius: 20px;
   }
+
+  div.uploadedImagesWrapper {
+      display: inline;
+
+  }
+  img.photoImagesUpload {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px;
+}

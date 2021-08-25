@@ -20,7 +20,8 @@ router.get('/', (req, res) => {
 // POST a new photo
 router.post('/', (req, res) => {
     Photo.create({
-        url: req.body.url
+        url: req.body.url,
+        category: req.body.category
     })
         .then(photoData => res.json(photoData))
         .catch(err => {

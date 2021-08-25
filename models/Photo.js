@@ -16,6 +16,11 @@ Photo.init(
             type: DataTypes.TEXT,
             allowNull: false
         },
+
+        category: {
+            type: DataTypes.TEXT,
+            allowNull: false
+        },
     
     },
     {
