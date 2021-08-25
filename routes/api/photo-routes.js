@@ -15,6 +15,25 @@ router.get('/', (req, res) => {
         });
 });
 
+router.get('/:category', (req, res) => {
+    Photo.findAll({
+        where:  {
+            category: req.params.category
+        },
+        attributes: [
+            'id',
+            'url',
+            'category'
+        ],
+    })
+        .then(photoData => res.json(photoData))
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err);
+        });
+});
+
+
 
 
 // POST a new photo

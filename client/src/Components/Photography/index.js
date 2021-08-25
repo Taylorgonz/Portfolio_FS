@@ -8,23 +8,32 @@ import Hero from '../Hero/index'
 
 
 const Photography = ({ setModalImage }) => {
-    const [photos, setPhotos] = useState([]);
-    // const [photos, setPhotos] = useState([]);
-    // const [photos, setPhotos] = useState([]);
+    const [portPhotos, setPortPhotos] = useState([]);
+    const [prodPhotos, setProdPhotos] = useState([]);
+    const [lifePhotos, setLifePhotos] = useState([]);
     const getPics = () => {
-        axios.get('/api/photos')
-            .then(res => setPhotos(res.data))
-            .catch(err => setPhotos([err]));
+        axios.get('/api/photos/portrait')
+            .then(res => setPortPhotos(res.data))
+            .catch(err => setPortPhotos([err]));
+
+        axios.get('/api/photos/lifestyle')
+            .then(res => setLifePhotos(res.data))
+            .catch(err => setLifePhotos([err]));
+
+        axios.get('/api/photos/product')
+            .then(res => setProdPhotos(res.data))
+            .catch(err => setProdPhotos([err]));
+
     }
 
     // getPics();
 
 
     useEffect(() => {
-        if (photos.length === 0) getPics();
-    }, [photos])
+        if (portPhotos.length === 0) getPics();
+    })
 
-    console.log(photos);
+    
 
 
 
@@ -34,20 +43,20 @@ const Photography = ({ setModalImage }) => {
             <h1 className='photographyTitle'>Photography</h1>
             <Row className='photoRow'>
                 <Col>
-                <h2>Life Style</h2>
-                    {photos.map((photo, i) =>
+                    <h2>Life Style</h2>
+                    {lifePhotos.map((photo, i) =>
                         <img className="photoImages" key={photo.id} src={photo.url} onClick={() => setModalImage(photo.url)} />
                     )}
                 </Col>
                 <Col>
-                <h2>Portraits</h2>
-                    {photos.map((photo, i) =>
+                    <h2>Portraits</h2>
+                    {portPhotos.map((photo, i) =>
                         <img className="photoImages" key={photo.id} src={photo.url} onClick={() => setModalImage(photo.url)} />
                     )}
                 </Col>
                 <Col>
-                <h2>Product</h2>
-                    {photos.map((photo, i) =>
+                    <h2>Product</h2>
+                    {prodPhotos.map((photo, i) =>
                         <img className="photoImages" key={photo.id} src={photo.url} onClick={() => setModalImage(photo.url)} />
                     )}
                 </Col>

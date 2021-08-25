@@ -50,7 +50,7 @@ const Upload = () => {
             axios.post('/api/photos',
                 {
                     'url': res.data.url,
-                    'category': res.data.category
+                    'category': photoCat.current.value
                 }).then(
                     setLoadedImage(""),
                     setPreviewPhotos(""),
