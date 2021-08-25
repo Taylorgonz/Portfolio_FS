@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./style.css"
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import API from '../../utils/API'
 import axios from 'axios'
 
@@ -33,7 +33,7 @@ const Photography = ({ setModalImage }) => {
         if (portPhotos.length === 0) getPics();
     })
 
-    
+
 
 
 
@@ -42,23 +42,44 @@ const Photography = ({ setModalImage }) => {
         <Container id="photography" className="photographyContainer" >
             <h1 className='photographyTitle'>Photography</h1>
             <Row className='photoRow'>
-                <Col>
+                <Col md="4">
                     <h2>Life Style</h2>
-                    {lifePhotos.map((photo, i) =>
-                        <img className="photoImages" key={photo.id} src={photo.url} onClick={() => setModalImage(photo.url)} />
+                    <Carousel variant='dark' className="carouselStyle">
+                        
+                        {lifePhotos.map((photo, i) =>
+                        <Carousel.Item onClick={() => setModalImage(photo.url)}>
+                        <img className="photoImages" key={photo.id} src={photo.url}  />
+                        </Carousel.Item>
                     )}
+                        
+                    </Carousel>
+                    
                 </Col>
-                <Col>
+                <Col md="4">
                     <h2>Portraits</h2>
-                    {portPhotos.map((photo, i) =>
+                    <Carousel className="carouselStyle">
+                        
+                        {portPhotos.map((photo, i) =>
+                        <Carousel.Item>
                         <img className="photoImages" key={photo.id} src={photo.url} onClick={() => setModalImage(photo.url)} />
+                        </Carousel.Item>
                     )}
+                        
+                    </Carousel>
+                    
                 </Col>
-                <Col>
+                <Col md="4">
                     <h2>Product</h2>
-                    {prodPhotos.map((photo, i) =>
-                        <img className="photoImages" key={photo.id} src={photo.url} onClick={() => setModalImage(photo.url)} />
+                    <Carousel className="carouselStyle">
+                        
+                        {prodPhotos.map((photo, i) =>
+                        <Carousel.Item className="carouselItem" onClick={() => setModalImage(photo.url)}>
+                        <img className="photoImages" key={photo.id} src={photo.url}  />
+                        </Carousel.Item>
                     )}
+                        
+                    </Carousel>
+                    
                 </Col>
             </Row>
 
