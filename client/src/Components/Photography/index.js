@@ -4,7 +4,7 @@ import { Container, Row, Col, Carousel } from "react-bootstrap";
 import API from '../../utils/API'
 import axios from 'axios'
 
-import Hero from '../Hero/index'
+
 
 
 const Photography = ({ setModalImage }) => {
@@ -39,11 +39,11 @@ const Photography = ({ setModalImage }) => {
 
 
     return (
-        <Container id="photography" className="photographyContainer" >
+        <Container fluid={true} id="photography" className="photographyContainer" >
             <h1 className='photographyTitle'>Photography</h1>
             <Row className='photoRow'>
                 <Col md="4">
-                    <h2>Life Style</h2>
+                    <h2 className="styleTitles">Life Style</h2>
                     <Carousel variant='dark' className="carouselStyle">
                         
                         {lifePhotos.map((photo, i) =>
@@ -56,7 +56,7 @@ const Photography = ({ setModalImage }) => {
                     
                 </Col>
                 <Col md="4">
-                    <h2>Portraits</h2>
+                    <h2 className="styleTitles">Portraits</h2>
                     <Carousel className="carouselStyle">
                         
                         {portPhotos.map((photo, i) =>
@@ -69,7 +69,7 @@ const Photography = ({ setModalImage }) => {
                     
                 </Col>
                 <Col md="4">
-                    <h2>Product</h2>
+                    <h2 className="styleTitles">Product</h2>
                     <Carousel className="carouselStyle">
                         
                         {prodPhotos.map((photo, i) =>
