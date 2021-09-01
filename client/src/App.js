@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" render={() => <Main modalImage={modalImage} setModalImage={setModalImage}/>}/>
-          <Route exact path="/upload" render={() => <Upload/>} />
+          <Route exact path="/upload" render={() => <Upload modalImage={modalImage} setModalImage={setModalImage}/>} />
         </Switch>
       </Router>
       {modalImage && <Modal modalImage={modalImage} setModalImage={setModalImage} />}

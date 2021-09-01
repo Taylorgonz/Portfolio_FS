@@ -20,6 +20,9 @@ router.get('/:category', (req, res) => {
         where:  {
             category: req.params.category
         },
+        order: [
+            ['id', 'ASC']
+        ],
         attributes: [
             'id',
             'url',

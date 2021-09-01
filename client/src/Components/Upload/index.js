@@ -7,11 +7,11 @@ import axios from 'axios'
 
 
 
-const Upload = () => {
+const Upload = ({setModalImage, modalImage}) => {
     const [photos, setPhotos] = useState([]);
     const [previewPhotos, setPreviewPhotos] = useState("");
     const [loadedImage, setLoadedImage] = useState();
-    let photoCat =useRef()
+    let photoCat = useRef()
 
     const getPics = () => {
         axios.get('/api/photos')
@@ -88,21 +88,25 @@ const Upload = () => {
                 <button type="button" onClick={(e) => postImage()}>Submit</button>
             </form>
 
-            <div className='previewImageWrapper'>
+            <Row className='previewImageWrapper '>
                 {
                     previewPhotos &&
-                    <img className="previewImage" src={previewPhotos} />
+                    <Col s='12'>
+                        <img  onClick={() => setModalImage(previewPhotos)} className="previewImage" src={previewPhotos} />
+                    </Col>
                 }
-            </div>
+            </Row>
 
             <hr />
-            {photos.map((photo, i) =>
-                <div className='uploadedImagesWrapper'>
+            <Row>
+                {photos.map((photo, i) =>
+                    <Col m='auto' className='uploadedImagesWrapper justify-content-center'>
 
-                    <img className="photoImagesUpload" key={i} src={photo.url}></img>
+                        <img onClick={() => setModalImage(photo.url)} className="photoImagesUpload" key={i} src={photo.url}></img>
 
-                </div>
-            )}
+                    </Col>
+                )}
+            </Row>
 
 
         </Container>
