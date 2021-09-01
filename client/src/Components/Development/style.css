@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Neon';
+    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: 'Archive';
+    src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  .webDevContainer {
+      height: 100vh;
+      font-family: 'Neon';
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-top: 20px;
+      scroll-snap-align: start;
+  }
+
+  .carouselWebItem {
+      background-color: rgb(230, 43, 26, 0.4);
+      border-radius: 20px;
+     justify-content: center;
+     align-items: center
+  }
+
+  h2.projectTitle {
+      
+  }
+  img.WebDevImages {
+    height: 90vh;
+    width: 100%;
+    /* margin: 10px; */
+    object-fit: cover;
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}

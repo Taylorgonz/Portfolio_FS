@@ -11,19 +11,20 @@ const About = () => {
     return (
         <Container className="aboutContainer" >
 
-
-            <NavDropdown classname="navDrop" title="Take a look around" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#photography">Photography</NavDropdown.Item>
-                <NavDropdown.Item href="">Web Development</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Design</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Contact</NavDropdown.Item>
-            </NavDropdown>
-
             <Row>
-                <Col>
+                <NavDropdown classname="navDrop" title="Take a look around" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#photography">Photography</NavDropdown.Item>
+                    <NavDropdown.Item href="">Web Development</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Design</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">Contact</NavDropdown.Item>
+                </NavDropdown>
+            </Row>
+
+            <Row className="d-flex">
+                <Col className="d-flex justify-content-center">
                     <img className="aboutImage" src={headshot} />
                 </Col>
-                <Col>
+                <Col className="aboutDiv">
                     <Row>
                         <h2 className="aboutTitle">
                             About
