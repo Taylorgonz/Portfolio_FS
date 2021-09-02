@@ -11,7 +11,11 @@
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
   }
-
+    
+.webDevTitle {
+    color:rgb(230, 43, 26, 0.4);
+  
+}
   .webDevContainer {
       height: 100vh;
       font-family: 'Neon';
@@ -21,23 +25,60 @@
       scroll-snap-align: start;
   }
 
-  .carouselWebItem {
+  div.carouselWebItem {
       background-color: rgb(230, 43, 26, 0.4);
       border-radius: 20px;
      justify-content: center;
-     align-items: center
+     align-items: center;
+     overflow: hidden;
+     
+  }
+  div.carouselStylingWeb {
+      display: flex; 
+      justify-content: center;
   }
 
-  h2.projectTitle {
-      
-  }
+  
   img.WebDevImages {
-    height: 90vh;
+    height: 85vh;
     width: 100%;
     /* margin: 10px; */
+   
     object-fit: cover;
-    background-position: center;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    object-position: top;
+    /* border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; */
     cursor: pointer;
+}
+
+.webAppInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-content: center;
+}
+h2.projectTitle {
+    font-family: 'Archive';
+    border-bottom: 3px solid rgb(255, 255, 255);
+    
+}
+
+p.webAppDesc {
+    text-align: left;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+ul.webAppLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+ul.webAppLinks li a {
+   text-align: center;
+   font-family: "Archive";
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+
 }

@@ -36,23 +36,23 @@
   img.photoImages {
       height: 82vh;
       width: 100%;
-      /* margin: 10px; */
       object-fit: cover;
       background-position: center;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      
       cursor: pointer;
   }
   div.carouselStyle {
-   width: 100%;
-   display: flex;
-   justify-self: center
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
   }
 
   .carouselItem {
     background-position: center;
     object-fit: cover;
+    
   }
 
   a.carousel-control-prev,
@@ -64,7 +64,7 @@
       font-weight: 900;
       font-size: large;
       opacity: .9;
-      color: rgba(255, 255, 255);
+      color: rgb(230, 43, 26, 0.4);
   }
   a.carousel-control-prev:focus,
   a.carousel-control-next:focus {
@@ -73,7 +73,7 @@
       text-orientation: upright;
       text-decoration: none;
 
-      /* color: rgb(230, 43, 26); */
+      color: rgb(230, 43, 26, 0.4);
   }
   a.carousel-control-prev:hover,
   a.carousel-control-next:hover {
@@ -81,6 +81,7 @@
       writing-mode: vertical-lr;
       text-orientation: upright;
       text-decoration: none;
+      color:rgb(255, 255, 255);
       text-shadow: -2px 2px  rgb(230, 43, 26, 0.8); 
 
      

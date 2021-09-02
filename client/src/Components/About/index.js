@@ -14,7 +14,7 @@ const About = () => {
             <Row>
                 <NavDropdown classname="navDrop" title="Take a look around" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#photography">Photography</NavDropdown.Item>
-                    <NavDropdown.Item href="">Web Development</NavDropdown.Item>
+                    <NavDropdown.Item href="#WebDev">Web Development</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.3">Design</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.4">Contact</NavDropdown.Item>
                 </NavDropdown>
