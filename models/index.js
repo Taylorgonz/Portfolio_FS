@@ -1,7 +1,11 @@
 
 const Photo = require('./Photo');
 const Websites = require('./Websites');
+const Tech = require('./Tech')
 
 
-module.exports = { Photo, Websites };
+Websites.hasMany(Tech);
+Tech.belongsTo(Websites);
+
+module.exports = { Photo, Websites, Tech };
 

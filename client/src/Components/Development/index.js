@@ -33,19 +33,47 @@ const WebDev = ({ setModalImage }) => {
                     {webDev.map((web, i) =>
                         <Carousel.Item key={i} className="carouselWebItem">
                             <div className='carouselStylingWeb'>
-                            <Col className=''>
-                                <img className="WebDevImages" onClick={() => setModalImage(web.image)} src={web.image}  />
-                            </Col>
-                            <Col className='webAppInfo'>
-                                <h2 className="projectTitle">{web.title}</h2>
-                                <p className="webAppDesc">{web.description}</p>
-                                <ul className='webAppLinks'>
-                                    <li><a target='_blank' href={web.url}>Site Link</a></li>
-                                    <li><a target='_blank' href={web.github_url}>Github</a></li>
+                                <Col  className=' col-lg-8 imgColumn'>
+                                    <img className="WebDevImages" onClick={() => setModalImage(web.image)} src={web.image} />
+                                </Col>
+                                <Col className='col-lg-4 webAppInfo'>
+                                    <h2 className="projectTitle">{web.title}</h2>
+                                    <p className="webAppDesc">{web.description}</p>
+                                    <ul className='webAppLinks'>
+                                        <li><a target='_blank' href={web.url}>Site Link</a></li>
+                                        <li><a target='_blank' href={web.github_url}>Github</a></li>
+
+                                    </ul>
+                                </Col>
+                            </div>
+                            <Col className=' webTechnologies'>
+                                <h3 className='techTitle'>Technologies</h3>
+                                <Row>
+                                <ul className='techList'>
+                                    <Col className='col-3'>
+                                    <li>React</li>
+                                    </Col>
+                                    <Col className='col-3'>
+                                    <li>React</li>
+                                    </Col>
+                                    <Col className='col-3'>
+                                    <li>React</li>
+                                    </Col>
+                                    <Col className='col-3'>
+                                    <li>React</li>
+                                    </Col>
+                                    <Col className='col-3'>
+                                    <li>React</li>
+                                    </Col>
+                                    <Col className='col-3'>
+                                    <li>React</li>
+                                    </Col>
+                                    
 
                                 </ul>
+                                </Row>
                             </Col>
-                            </div>
+
                         </Carousel.Item>
                     )}
 

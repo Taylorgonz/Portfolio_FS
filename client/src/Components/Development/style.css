@@ -34,29 +34,34 @@
      
   }
   div.carouselStylingWeb {
-      display: flex; 
+      display: flex;
       justify-content: center;
+      
   }
 
+ 
   
   img.WebDevImages {
-    height: 85vh;
+    height: 70vh;
     width: 100%;
     /* margin: 10px; */
    
     object-fit: cover;
     object-position: top;
-    /* border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     cursor: pointer;
 }
 
-.webAppInfo {
+div.webAppInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
    align-content: center;
+   overflow: auto;
+   
 }
+
 h2.projectTitle {
     font-family: 'Archive';
     border-bottom: 3px solid rgb(255, 255, 255);
@@ -81,4 +86,68 @@ ul.webAppLinks li a {
     color: rgb(255, 255, 255);
     margin-right: 20px;
 
+}
+
+div.webTechnologies {
+    
+    border-top: 5px solid rgb(255, 255, 255) ;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.techTitle {
+    margin-top: 10px;
+    font-family: 'Archive';
+
+}
+
+ul.techList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 600;
+  
+    
+   
+}
+ul.techList div li {
+
+ margin-top:10px;
+
+}
+
+@media screen and (max-width: 400px) {
+
+    div.carouselStylingWeb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img.WebDevImages {
+        height: 30vh;
+        width: 100%;
+        border-bottom-right-radius: 0px;
+        /* margin: 10px; */
+       
+    }
+    p.webAppDesc {
+        margin-top: 10px;
+        text-align: center;
+        height: 200px;
+        overflow: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-content: center;
+       
+    }
+
+    p.webAppDesc {
+        
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 }
