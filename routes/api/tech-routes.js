@@ -18,8 +18,6 @@ router.get('/', (req, res) => {
 
 
 
-
-
 // POST a new tech
 router.post('/', (req, res) => {
     Tech.create({

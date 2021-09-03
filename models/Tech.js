@@ -13,7 +13,8 @@ Tech.init(
             primaryKey: true
         },
         webId: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
+            allowNull: false,
             references: {
                 model: Websites,
                 key: 'id'

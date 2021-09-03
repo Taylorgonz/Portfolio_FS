@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Photo } = require('../../models');
+const { Photo, Websites, Tech } = require('../../models');
 // Get all photos
 router.get('/', (req, res) => {
     Photo.findAll({
@@ -27,7 +27,16 @@ router.get('/:category', (req, res) => {
             'id',
             'url',
             'category'
-        ],
+        ],include: [
+            {
+                model: Tech,
+                attributes: [
+                    'id',
+                    'webId',
+                    'name'
+                ],
+            }
+        ]
     })
         .then(photoData => res.json(photoData))
         .catch(err => {
