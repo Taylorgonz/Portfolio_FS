@@ -24,6 +24,7 @@ const WebDev = ({ setModalImage }) => {
 
 
 
+
     return (
         <Container fluid={true} id="WebDev" className='webDevContainer'>
             <h1 className="webDevTitle"> Web Development </h1>
@@ -33,7 +34,7 @@ const WebDev = ({ setModalImage }) => {
                     {webDev.map((web, i) =>
                         <Carousel.Item key={i} className="carouselWebItem">
                             <div className='carouselStylingWeb'>
-                                <Col  className=' col-lg-8 imgColumn'>
+                                <Col className=' col-lg-8 imgColumn'>
                                     <img className="WebDevImages" onClick={() => setModalImage(web.image)} src={web.image} />
                                 </Col>
                                 <Col className='col-lg-4 webAppInfo'>
@@ -46,33 +47,38 @@ const WebDev = ({ setModalImage }) => {
                                     </ul>
                                 </Col>
                             </div>
-                            <Col className=' webTechnologies'>
-                                <h3 className='techTitle'>Technologies</h3>
-                                <Row>
-                                <ul className='techList'>
-                                    <Col className='col-3'>
-                                    <li>React</li>
-                                    </Col>
-                                    <Col className='col-3'>
-                                    <li>React</li>
-                                    </Col>
-                                    <Col className='col-3'>
-                                    <li>React</li>
-                                    </Col>
-                                    <Col className='col-3'>
-                                    <li>React</li>
-                                    </Col>
-                                    <Col className='col-3'>
-                                    <li>React</li>
-                                    </Col>
-                                    <Col className='col-3'>
-                                    <li>React</li>
-                                    </Col>
-                                    
+                            <Col className='d-flex webTechnologies'>
+                                <Col className="">
 
-                                </ul>
-                                </Row>
+                                    <h3 className='techTitle'>Technologies</h3>
+
+                                    <ul className='techList'>
+
+                                        {web.teches && web.teches.map((tech, i) =>
+
+                                            <li key={i} className="col col-6 col-lg-3">{tech.name}</li>
+
+                                        )}
+
+
+                                    </ul>
+                                </Col >
+                                {web.features.length > 0 &&
+                                
+                                    <Col className='webFeat col-6'>
+                                        <h3 className='featTitle'> Group Project</h3>
+                                        <p className='featSubTitle'>Features I worked on</p>
+                                        <ul className='techList'>
+                                        {web.features.map((feat,i) => 
+                                        <li key={i} className="col col-6 col-lg-4"> {feat.name}</li>
+
+                                        )}
+                                        </ul>
+                                    </Col>
+                                }
+
                             </Col>
+
 
                         </Carousel.Item>
                     )}

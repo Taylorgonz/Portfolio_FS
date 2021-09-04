@@ -3,9 +3,9 @@ const sequelize = require('../config/connection');
 const Websites = require('./Websites')
 
 
-class Tech extends Model {};
+class Features extends Model {};
 
-Tech.init(
+Features.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -31,8 +31,8 @@ Tech.init(
         sequelize,
         timestamps: false,
         underscored: true,
-        modelName: 'tech'
+        modelName: 'feature'
     }
 );
 
-module.exports = Tech;
+module.exports = Features;

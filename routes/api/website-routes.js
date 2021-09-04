@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Websites } = require('../../models');
+const { Websites, Tech, Features } = require('../../models');
 
 // Get all photos
 router.get('/', (req, res) => {
@@ -13,6 +13,24 @@ router.get('/', (req, res) => {
             'github_url'
             
         ],
+        include: [
+            {
+                model: Tech,
+                attributes: [
+                    'id',
+                    'websiteId',
+                    'name'
+                ],
+            },
+            {
+                model: Features,
+                attributes: [
+                    'id',
+                    'websiteId',
+                    'name'
+                ],
+            }
+        ]
     })
         .then(websiteData => res.json(websiteData))
         .catch(err => {

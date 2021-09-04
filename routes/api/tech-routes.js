@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
     Tech.findAll({
         attributes: [
             'id',
-            'webId',
+            'websiteId',
             'name'
         ],
     })
@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 // POST a new tech
 router.post('/', (req, res) => {
     Tech.create({
-        web: req.body.webId,
+        websiteId: req.body.websiteId,
         name: req.body.name
     })
         .then(techData => res.json(techData))

@@ -27,15 +27,6 @@ router.get('/:category', (req, res) => {
             'id',
             'url',
             'category'
-        ],include: [
-            {
-                model: Tech,
-                attributes: [
-                    'id',
-                    'webId',
-                    'name'
-                ],
-            }
         ]
     })
         .then(photoData => res.json(photoData))

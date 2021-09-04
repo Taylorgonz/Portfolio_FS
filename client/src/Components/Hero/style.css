@@ -122,7 +122,15 @@ div.heroContainer {
         
         
     }
-
+    #heroTop {
+        height: 90vh;
+    }
+    .heroImg {
+        height: 90vh;
+    }
+    .arrows {
+        height: 150px;
+    }
     .heroText {
         text-align: center;
         font-size: 50px;
