@@ -26,9 +26,9 @@ const About = () => {
                 </Col>
                 <Col className="aboutDiv">
                     <Row>
-                        <h2 className="aboutTitle">
+                        <h1 className="aboutTitle">
                             About
-                        </h2>
+                        </h1>
                     </Row>
                     <Row>
                         <p >
