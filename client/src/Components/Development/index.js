@@ -48,32 +48,32 @@ const WebDev = ({ setModalImage }) => {
                                 </Col>
                             </div>
                             <Col className='d-flex webTechnologies'>
-                                <Col className="">
+                                <Col className="webTech">
 
                                     <h3 className='techTitle'>Technologies</h3>
 
-                                    <ul className='techList'>
+                                    <div className='techList'>
 
                                         {web.teches && web.teches.map((tech, i) =>
 
-                                            <li key={i} className="col col-6 col-lg-3">{tech.name}</li>
+                                            <p key={i} className="col col-6 col-lg-3">{tech.name}</p>
 
                                         )}
 
 
-                                    </ul>
+                                    </div>
                                 </Col >
                                 {web.features.length > 0 &&
                                 
                                     <Col className='webFeat col-6'>
                                         <h3 className='featTitle'> Group Project</h3>
                                         <p className='featSubTitle'>Features I worked on</p>
-                                        <ul className='techList'>
+                                        <div className='techList'>
                                         {web.features.map((feat,i) => 
-                                        <li key={i} className="col col-6 col-lg-4"> {feat.name}</li>
+                                        <p key={i} className="col col-6 col-lg-4"> {feat.name}</p>
 
                                         )}
-                                        </ul>
+                                        </div>
                                     </Col>
                                 }
 

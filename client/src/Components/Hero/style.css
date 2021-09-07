@@ -1,60 +1,60 @@
 @font-face {
-    font-family: 'Neon';
-    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+    font-family: 'Roestica-Rustic';
+    src: local('Roestica-Rustic'), url(../fonts/Roestica-Rustic.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
   }
 @font-face {
-    font-family: 'Archive';
-    src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
+    font-family: 'Roestica-Press';
+    src: local('Roestica-Press'), url(../fonts/Roestica-Press.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+@font-face {
+    font-family: 'Roestica';
+    src: local('Roestica'), url(../fonts/Roestica-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+@font-face {
+    font-family:'Stranger-Wide';
+    src: local('Stranger'), url(../fonts/Stranger-WideTexture.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+@font-face {
+    font-family: 'Forest';
+    src: local('Forest'), url(../fonts/FOREST-CAMP-STAMP.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
   }
 
 
 .heroImg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/codingPortrait.JPG");
+    background-image:  url("./images/portfolio-top-text.png");
     height: 100vh;
     width: 100%;
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
   
 }
 
-.heroTitle {
-    color: #eee;
-    font-family: 'Neon';
-    font-weight: 600;
-    font-size: 90px;
-    margin-bottom: 0px;
-    padding: 10px;
-    text-shadow: 2px 2px 3px rgb(230, 43, 26);
+h1.heroTitle {
+    color: rgb(120, 122, 108);
+    font-family: 'Forest';
+    /* letter-spacing: 20px; */
+    /* font-weight: 600; */
+    font-size: 75px;
+    
+    
+    /* margin-bottom: -10px; */
+    padding-top: 40px;
+    /* text-shadow: 3px 3px rgb(75, 75, 75); 
     margin-top: 25px;
 }
-.titleUnderline{
-    border: 2px solid #eee;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width: 570px;
-    margin-bottom: 100px;
-    margin-top: 0px;
-    box-shadow: 2px 2px 3px rgb(230, 43, 26);
-}
 
-.heroText {
-    color: white;
-    font-family: 'Neon';
-    font-weight: 500;
-    font-size: 80px;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-shadow: 2px 2px 3px rgb(230, 43, 26);
-    /* border-bottom: 3px solid white; */
-    /* width: 45%; */
-    
-}
+
+
 div.heroContainer {
     display: flex;
     margin-left: 100px;
@@ -116,6 +116,15 @@ div.heroContainer {
 
 /* -------------- mobile------------------- */
 @media screen and (max-width: 400px) {
+    .heroImg {
+        background-image:  url("./images/portfolio-mobile-text.png");
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: left bottom;
+        
+    }
+      
 
     div.heroContainer{
         margin-left:0px;
@@ -123,9 +132,6 @@ div.heroContainer {
         
     }
     #heroTop {
-        height: 90vh;
-    }
-    .heroImg {
         height: 90vh;
     }
     .arrows {
@@ -136,24 +142,14 @@ div.heroContainer {
         font-size: 50px;
     }
 
-    .heroTitle {
+    h1.heroTitle {
         text-align: center;
-        font-size: 55px;
+        font-size: 60px;
         margin-top: 0;
+        padding-top: 50px;
         
     }
 
    
-    .titleUnderline{
-        border: 3px solid white;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        width: 95%;
-        margin-left: 10px;
-        margin-bottom: 150px;
-       
-        
-    }
+    
 }

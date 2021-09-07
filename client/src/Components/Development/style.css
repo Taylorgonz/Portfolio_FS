@@ -11,15 +11,41 @@
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
   }
+
+  @font-face {
+    font-family:'Stranger-Wide';
+    src: local('Stranger-Wide'), url(../fonts/Stranger-Wide.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+@font-face {
+    font-family:'Stranger-slim';
+    src: local('Stranger-slim'), url(../fonts/Stranger-Slim.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+@font-face {
+    font-family:'Stranger-inline';
+    src: local('Stranger-inline'), url(../fonts/Stranger-Inline.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+  @font-face {
+    font-family: 'Roestica';
+    src: local('Roestica'), url(../fonts/Roestica-Regular.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
     
-.webDevTitle {
-    color:rgb(230, 43, 26, 0.4);
-    letter-spacing: 20px;
+h1.webDevTitle {
+    color:rgb(237, 154, 31);
+    /* letter-spacing: 20px; */
+    font-family: 'Stranger-Wide'
+    
   
 }
   .webDevContainer {
       height: 100vh;
-      font-family: 'Neon';
       color: rgb(255, 255, 255);
       text-align: center;
       margin-top: 20px;
@@ -27,11 +53,12 @@
   }
 
   div.carouselWebItem {
-      background-color: rgb(230, 43, 26, 0.4);
-      border-radius: 20px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
      justify-content: center;
      align-items: center;
      overflow: hidden;
+    
      
   }
   div.carouselStylingWeb {
@@ -43,15 +70,14 @@
  
   
   img.WebDevImages {
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     /* margin: 10px; */
-    border: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
    
     object-fit: cover;
     object-position: top;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     /* border-bottom-right-radius: 20px; */
     cursor: pointer;
 }
@@ -62,11 +88,44 @@ div.webAppInfo {
     justify-content: center;
    align-content: center;
    overflow: auto;
+   background-color: rgb(120, 122, 108);
    
+   
+}
+div.carouselWebStyle
+a.carousel-control-prev,
+div.carouselWebStyle
+a.carousel-control-next {
+    width:50px;
+    overflow: hidden;
+    opacity: 1.0;
+    
+}
+div.carouselWebStyle
+a.carousel-control-prev {
+  border-top-right-radius:20px ;
+  border-bottom-right-radius:20px ;
+  padding-right: 5px;
+  margin-left: 12px;
+  border-top: 2px solid rgb(75, 75, 75);
+  border-right: 2px solid rgb(75, 75, 75);
+  border-bottom: 2px solid rgb(75, 75, 75);
+}
+div.carouselWebStyle
+a.carousel-control-next {
+  border-top-left-radius:20px ;
+  border-bottom-left-radius:20px ;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  margin-right: 12px;
+  border-top: 2px solid rgb(75, 75, 75);
+  border-left: 2px solid rgb(75, 75, 75);
+  border-bottom: 2px solid rgb(75, 75, 75);
+ 
 }
 
 h2.projectTitle {
-    font-family: 'Archive';
+    font-family: 'Stranger-inline';
     border-bottom: 3px solid rgb(255, 255, 255);
     background-color: transparent;
 
@@ -75,6 +134,7 @@ h2.projectTitle {
 
 p.webAppDesc {
     text-align:justify;
+    font-family: 'Stranger-slim';
     margin-right: 100px;
     margin-left: 100px;
     
@@ -89,7 +149,7 @@ ul.webAppLinks{
 ul.webAppLinks li a {
 
    text-align: center;
-   font-family: "Archive";
+   font-family: "Stranger-slim";
     color: rgb(255, 255, 255);
     margin-right: 20px;
    
@@ -97,51 +157,58 @@ ul.webAppLinks li a {
 }
 
 div.webTechnologies {
+    background-color: rgb(75, 75, 75);
     border-top: 5px solid rgb(255, 255, 255) ;
     margin-bottom: 10px;
     justify-content: center;
+    border-bottom: 5px solid rgb(255, 255, 255) ;
     width: 100%;
+   
 
 }
 
 .techTitle {
     margin-top: 10px;
-    font-family: 'Archive';
+    font-family: 'Stranger-inline';
 
 }
 
-ul.techList {
+div.techList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Raleway', sans-serif; 
+  
     font-weight: 600;
     align-content: center;
-    
+    height: 10vh;
+    overflow: auto;
   
     
    
 }
-ul.techList  li {
+div.techList  p {
   list-style: none;
   
  margin-top:10px;
-
+ font-family: "Stranger-slim";
 }
 
+
 .webFeat {
+    
     border-left: 5px solid rgb(255, 255, 255);
+    
 }
 .featTitle {
     margin-top: 10px;
     margin-bottom: -5px;
-    font-family: 'Archive';
+    font-family: 'Stranger-inline';
 
 }
 
 p.featSubTitle {
     margin-top: 0px;
-    font-family: 'Archive';
+    font-family: 'Stranger-wide';
     font-weight: 500;
 }
 
@@ -156,6 +223,8 @@ p.featSubTitle {
         height: 30vh;
         width: 100%;
         border-bottom-right-radius: 0px;
+        border-right: none;
+        border-bottom: 5px solid rgb(205, 197, 180)
         /* margin: 10px; */
        
     }
@@ -168,9 +237,16 @@ p.featSubTitle {
        
     }
 
-    .webDevTitle {
-        color:rgb(230, 43, 26, 0.4);
+    h1.webDevTitle {
+        
         letter-spacing: 10px;
       
+    }
+    div.techList {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }

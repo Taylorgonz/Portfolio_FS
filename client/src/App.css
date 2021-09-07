@@ -1,3 +1,8 @@
+
+/* html
+body {
+  background-color: rgb(77, 80, 97);
+} */
 .container {
   scroll-snap-type: mandatory;
 }
