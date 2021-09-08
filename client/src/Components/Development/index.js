@@ -56,7 +56,7 @@ const WebDev = ({ setModalImage }) => {
 
                                         {web.teches && web.teches.map((tech, i) =>
 
-                                            <p key={i} className="col col-6 col-lg-3">{tech.name}</p>
+                                            <p key={i} className="techItem col col-6 col-lg-3">{tech.name}</p>
 
                                         )}
 
@@ -70,7 +70,7 @@ const WebDev = ({ setModalImage }) => {
                                         <p className='featSubTitle'>Features I worked on</p>
                                         <div className='techList'>
                                         {web.features.map((feat,i) => 
-                                        <p key={i} className="col col-6 col-lg-4"> {feat.name}</p>
+                                        <p key={i} className="techItem col col-6 col-lg-4"> {feat.name}</p>
 
                                         )}
                                         </div>

@@ -39,7 +39,6 @@
     
 h1.webDevTitle {
     color:rgb(237, 154, 31);
-    /* letter-spacing: 20px; */
     font-family: 'Stranger-Wide'
     
   
@@ -70,16 +69,17 @@ h1.webDevTitle {
  
   
   img.WebDevImages {
-    height: 65vh;
+    height: 70vh;
     width: 100%;
-    /* margin: 10px; */
-    border-right: 5px solid rgb(255, 255, 255);
-   
+    border: 5px solid rgb(120, 122, 108);
     object-fit: cover;
     object-position: top;
     border-top-left-radius: 20px;
-    /* border-bottom-right-radius: 20px; */
     cursor: pointer;
+}
+
+img.WebDevImages:hover {
+    box-shadow: 5px 5px 6px rgb(75, 75, 75, 0.6);
 }
 
 div.webAppInfo {
@@ -88,10 +88,15 @@ div.webAppInfo {
     justify-content: center;
    align-content: center;
    overflow: auto;
-   background-color: rgb(120, 122, 108);
+   color:rgb(75, 75, 75);
+   border:5px solid rgb(120, 122, 108);
+   border-left: none;
+   border-top-right-radius: 20px;
+   
    
    
 }
+
 div.carouselWebStyle
 a.carousel-control-prev,
 div.carouselWebStyle
@@ -99,17 +104,26 @@ a.carousel-control-next {
     width:50px;
     overflow: hidden;
     opacity: 1.0;
-    
+    color: rgb(120, 122, 108);
 }
+
+div.carouselWebStyle
+a.carousel-control-prev:hover,
+div.carouselWebStyle
+a.carousel-control-next:hover {
+   background-color: rgb(120, 122, 108);
+   color: rgb(255, 255, 255);
+}
+
 div.carouselWebStyle
 a.carousel-control-prev {
   border-top-right-radius:20px ;
   border-bottom-right-radius:20px ;
   padding-right: 5px;
   margin-left: 12px;
-  border-top: 2px solid rgb(75, 75, 75);
-  border-right: 2px solid rgb(75, 75, 75);
-  border-bottom: 2px solid rgb(75, 75, 75);
+  border: 3px solid rgb(120, 122, 108);
+  border-left: 5px solid rgb(120, 122, 108);
+  /* border-bottom: 3px solid rgb(75, 75, 75); */
 }
 div.carouselWebStyle
 a.carousel-control-next {
@@ -118,23 +132,24 @@ a.carousel-control-next {
   padding-bottom: 15px;
   padding-left: 5px;
   margin-right: 12px;
-  border-top: 2px solid rgb(75, 75, 75);
-  border-left: 2px solid rgb(75, 75, 75);
-  border-bottom: 2px solid rgb(75, 75, 75);
+  border: 3px solid rgb(120, 122, 108);
+  border-right: 5px solid rgb(120, 122, 108);
+  /* border-bottom: 3px solid rgb(75, 75, 75); */
  
 }
 
 h2.projectTitle {
-    font-family: 'Stranger-inline';
-    border-bottom: 3px solid rgb(255, 255, 255);
+    font-family: 'Stranger-slim';
+    border-bottom: 3px solid rgb(120, 122, 108);
     background-color: transparent;
+    color:rgb(120, 122, 108);
 
     
 }
 
 p.webAppDesc {
     text-align:justify;
-    font-family: 'Stranger-slim';
+    /* font-family: 'Stranger-slim'; */
     margin-right: 100px;
     margin-left: 100px;
     
@@ -145,47 +160,47 @@ ul.webAppLinks{
     /* flex-direction: column; */
     justify-content: center;
     list-style: none;
+    
 }
 ul.webAppLinks li a {
 
    text-align: center;
    font-family: "Stranger-slim";
-    color: rgb(255, 255, 255);
+   color:rgb(237, 154, 31);
     margin-right: 20px;
    
 
 }
 
 div.webTechnologies {
-    background-color: rgb(75, 75, 75);
-    border-top: 5px solid rgb(255, 255, 255) ;
     margin-bottom: 10px;
+    margin-top: 5px;
     justify-content: center;
-    border-bottom: 5px solid rgb(255, 255, 255) ;
     width: 100%;
-   
-
+   height: 20vh;
 }
 
-.techTitle {
-    margin-top: 10px;
-    font-family: 'Stranger-inline';
 
+
+.techTitle {
+    margin-bottom: -5px;
+    font-family: 'Stranger-inline';
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 75, 75);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 div.techList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
     font-weight: 600;
     align-content: center;
-    height: 10vh;
+    height: 100%;
     overflow: auto;
-  
-    
-   
 }
+
 div.techList  p {
   list-style: none;
   
@@ -193,27 +208,38 @@ div.techList  p {
  font-family: "Stranger-slim";
 }
 
-
-.webFeat {
+.webFeat,
+.webTech {
     
-    border-left: 5px solid rgb(255, 255, 255);
-    
+    /* border-left: 5px solid rgb(255, 255, 255); */
+    color:rgb(75, 75, 75);
+    border: 5px solid rgb(75, 75, 75);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .featTitle {
-    margin-top: 10px;
-    margin-bottom: -5px;
+    /* margin-top: 10px; */
+ 
     font-family: 'Stranger-inline';
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 75, 75);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 
 }
 
 p.featSubTitle {
-    margin-top: 0px;
+    margin-bottom: -40px;
     font-family: 'Stranger-wide';
     font-weight: 500;
 }
 
 @media screen and (max-width: 400px) {
 
+    /* .webDevContainer {
+        height: 90vh;
+    } */
     div.carouselStylingWeb {
         display: flex;
         flex-direction: column;
@@ -223,14 +249,21 @@ p.featSubTitle {
         height: 30vh;
         width: 100%;
         border-bottom-right-radius: 0px;
-        border-right: none;
-        border-bottom: 5px solid rgb(205, 197, 180)
+        border-top-right-radius: 20px ;
+        /* border-right: none; */
+        border: 5px solid rgb(120, 122, 108);
         /* margin: 10px; */
        
     }
+
+    div.webAppInfo {
+        border: 5px solid rgb(120, 122, 108);
+        border-top: none;
+        border-top-right-radius: 0px;
+    }
     p.webAppDesc {
         margin-top: 10px;
-        height: 200px;
+        height: 20vh;
         overflow: auto;
         margin-right: 30px;
         margin-left: 30px;
@@ -243,17 +276,20 @@ p.featSubTitle {
       
     }
     div.techList {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        padding: 10px;
+        padding-bottom: 10px; 
     }
+    
+    p.featSubTitle {
+        margin: 0px;
+    }
+
+
     div.carouselWebStyle
 a.carousel-control-prev,
 div.carouselWebStyle
 a.carousel-control-next {
-    width:20px;
+    width:30px;
     overflow: hidden;
     opacity: 0.8;
     margin-top: auto;
@@ -264,18 +300,26 @@ div.carouselWebStyle
 a.carousel-control-prev {
   border-top-right-radius:20px ;
   border-bottom-right-radius:20px ;
-  padding-right: 7px;
+  border: 3px solid rgb(120, 122, 108);
+  padding-right: 4px;
   margin-left: 12px;
- border:none;
 }
 div.carouselWebStyle
 a.carousel-control-next {
   border-top-left-radius:20px ;
   border-bottom-left-radius:20px ;
   padding-bottom: 15px;
-  padding-left: 5px;
+  /* padding-left: px; */
   margin-right: 12px;
-  border: none;
+  border: 3px solid rgb(120, 122, 108);
+  border-right: 5px solid rgb(120, 122, 108);
  
 }
+
+div.webTechnologies{
+    display: block;
+    height: 20vh;
+}
+
+
 }

@@ -59,6 +59,8 @@
       background-position: center;
       cursor: pointer;
   }
+
+  
   div.carouselStyle {
     width: 100%;
     display: flex;
@@ -71,7 +73,10 @@
   .carouselItem {
     background-position: center;
     object-fit: cover;
-    
+  }
+
+  div.carouselStyle:hover {
+    box-shadow: 5px 5px 8px rgb(75, 75, 75, 0.6);
   }
 
   a.carousel-control-prev,
