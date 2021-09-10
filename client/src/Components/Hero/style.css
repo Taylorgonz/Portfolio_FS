@@ -49,13 +49,8 @@ div.navbar-nav {
 div.container-fluid div.navbar-nav a.nav-link {
     margin-left: auto;
     color:rgb(237, 154, 31, 0.8);
-    font-size: 30px;
+    font-size: 35px;
     padding: 15px;
-}
-div.container-fluid div.navbar-nav a.nav-link:hover{
-   
-    /* color:rgba(255, 255, 255, 0.8); */
-  
 }
 .navbar-light {
     color: none;
