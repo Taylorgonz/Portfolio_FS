@@ -1,6 +1,6 @@
 import React from "react"
 import "./style.css"
-import { Container } from "react-bootstrap";
+import { Container, Navbar, Nav, NavDropdown} from "react-bootstrap";
 
 
 
@@ -12,13 +12,20 @@ const Hero = () => {
 
             <div className="heroImg">
                 {/* <h1 className="heroTitle">TaylorGonz</h1> */}
-                <Container className='p-0 heroContainer' >
-                    <h1 className="heroTitle"> Taylor Gonz </h1>
-                    {/* <div className='titleUnderline'></div>
-                    <h1 className="heroText"> Designer </h1>
-                    <h1 className="heroText"> Photographer </h1>
-                    <h1 className="heroText"> Web Developer </h1> */}
-
+                <Container fluid={true} className='p-0 heroContainer' >
+                    <Navbar bg="" expand="lg">
+                        <Container fluid={true}>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="">
+                                    <Nav.Link href="#About">About</Nav.Link>
+                                    <Nav.Link href="#photography">Photography</Nav.Link>
+                                    <Nav.Link href="#WebDev">Web Development</Nav.Link>
+                                    <Nav.Link href="#link">Contact</Nav.Link>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                    </Navbar>
                 </Container>
                 <svg class="arrows">
                     <path class="a1" d="M0 0 L30 32 L60 0"></path>
