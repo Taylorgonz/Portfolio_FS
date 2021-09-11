@@ -7,6 +7,7 @@ import Modal from './Components/Modal/index'
 import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import { AuthContextProvider, useAuthState } from './firebase'
 
+
 const AuthenticatedRoute = ({ render: C, ...props }) => {
   const { isAuthenticated } = useAuthState()
   return (
