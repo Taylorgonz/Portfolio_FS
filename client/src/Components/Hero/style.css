@@ -76,7 +76,7 @@ nav.navbar {
 .arrows path {
 	stroke: rgb(237, 154, 31);
 	fill: transparent;
-	stroke-width: 3px;	
+	stroke-width: 6px;	
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite; 
 }

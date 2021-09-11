@@ -1,8 +1,11 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect, useRef, useCallback } from "react"
+import { Link }from 'react-router-dom'
 import "./style.css"
 import { Container, Row, Col } from "react-bootstrap";
 import API from '../../utils/API'
 import axios from 'axios'
+import { getAuth, signOut } from 'firebase/auth'
+import { useAuthStat, useAuthState } from '../../firebase'
 
 
 
@@ -121,6 +124,8 @@ const Upload = ({ setModalImage, modalImage }) => {
     return (
         <Container className='uploadContainer' >
             <h1> UPLOAD</h1>
+            <button onClick={() => signOut(getAuth())}>  Signout </button>
+            <button><Link style={{color:"black"}} to="/">Homepage</Link></button>
             {/* --------------------- photo uploads ---------------------- */}
             <hr />
             <h2>Photos</h2>

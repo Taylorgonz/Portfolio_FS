@@ -6,6 +6,7 @@ import Photography from "../Photography/index";
 import WebDev from "../Development/index"
 import Upload from '../Upload/index'
 
+
 const Main = ({setModalImage, modalImage}) => {
 
     return (
