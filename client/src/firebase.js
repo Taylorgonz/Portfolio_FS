@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, onAuthStateChanged } from "firebase/auth"
 import { useContext, useState, useEffect, createContext } from 'react';
-
+require('dotenv').config();
 
 const FirebaseApp = initializeApp({
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
