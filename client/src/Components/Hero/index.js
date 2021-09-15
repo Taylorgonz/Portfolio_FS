@@ -19,7 +19,7 @@ const Hero = () => {
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="">
                                     <Nav.Link href="#About">About</Nav.Link>
-                                    <Nav.Link href="#photography">Photography</Nav.Link>
+                                    <Nav.Link href="#Photography">Photography</Nav.Link>
                                     <Nav.Link href="#WebDev">Web Development</Nav.Link>
                                     <Nav.Link href="#link">Contact</Nav.Link>
                                 </Nav>

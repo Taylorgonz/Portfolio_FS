@@ -39,47 +39,50 @@ const Photography = ({ setModalImage }) => {
 
 
     return (
-        <Container fluid={true} id="photography" className="photographyContainer" >
+        <Container fluid={true} id="Photography" className="photographyContainer" >
             <h1 className='photographyTitle'>Photography</h1>
             <Row className='photoRow'>
                 <Col md="4">
                     <h2 className="styleTitles">Life Style</h2>
-                    <Carousel variant='dark' className="carouselStyle">
-                        
+                    <Carousel prevLabel='prev' variant='dark' className="carouselStyle">
+
                         {lifePhotos.map((photo, i) =>
-                        <Carousel.Item onClick={() => setModalImage(photo.url)}>
-                        <img className="photoImages" key={photo.id} src={photo.url}  />
-                        </Carousel.Item>
-                    )}
-                        
+                            <Carousel.Item onClick={() => setModalImage(photo.url)}>
+                                <div className="photoOverlay" />
+                                <img className="photoImages" key={photo.id} src={photo.url} />
+                            </Carousel.Item>
+                        )}
+
                     </Carousel>
-                    
+
                 </Col>
                 <Col md="4">
                     <h2 className="styleTitles">Portraits</h2>
-                    <Carousel className="carouselStyle">
-                        
+                    <Carousel prevLabel='prev' className="carouselStyle">
+
                         {portPhotos.map((photo, i) =>
-                        <Carousel.Item>
-                        <img className="photoImages" key={photo.id} src={photo.url} onClick={() => setModalImage(photo.url)} />
-                        </Carousel.Item>
-                    )}
-                        
+                            <Carousel.Item onClick={() => setModalImage(photo.url)}>
+                                <div className="photoOverlay"/>
+                                <img className="photoImages" key={photo.id} src={photo.url}  />
+                            </Carousel.Item>
+                        )}
+
                     </Carousel>
-                    
+
                 </Col>
                 <Col md="4">
                     <h2 className="styleTitles">Product</h2>
-                    <Carousel className="carouselStyle">
-                        
+                    <Carousel prevLabel='prev' className="carouselStyle">
+
                         {prodPhotos.map((photo, i) =>
-                        <Carousel.Item className="carouselItem" onClick={() => setModalImage(photo.url)}>
-                        <img className="photoImages" key={photo.id} src={photo.url}  />
-                        </Carousel.Item>
-                    )}
-                        
+                            <Carousel.Item className="carouselItem" onClick={() => setModalImage(photo.url)}>
+                                <div className="photoOverlay" />
+                                <img className="photoImages" key={photo.id} src={photo.url} />
+                            </Carousel.Item>
+                        )}
+
                     </Carousel>
-                    
+
                 </Col>
             </Row>
 

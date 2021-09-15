@@ -39,7 +39,8 @@
     
 h1.webDevTitle {
     color:rgb(237, 154, 31);
-    font-family: 'Stranger-Wide'
+    font-family: 'Stranger-Wide';
+    margin-bottom: 30px;
     
   
 }
@@ -51,11 +52,17 @@ h1.webDevTitle {
       scroll-snap-align: start;
   }
 
+  .carouselWebStyle {
+      height: 90vh; 
+      
+      
+  }
+
   div.carouselWebItem {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
      justify-content: center;
-     align-items: center;
+     /* align-items: center; */
      overflow: hidden;
     
      
@@ -65,16 +72,33 @@ h1.webDevTitle {
       justify-content: center;
       
   }
-
+ 
  
   
+  div.webOverlay {
+    background-color: rgb(75, 75, 75, 0.3);
+    position: relative;
+    width: inherit;
+    height: 72vh;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    border: 10px;
+    border-top-right-radius: 20px;
+
+  }
+
+  div.webOverlay:hover {
+    background-color: transparent;
+  }
+
   img.WebDevImages {
-    height: 70vh;
+    height: 72vh;
     width: 100%;
-    border: 5px solid rgb(120, 122, 108);
     object-fit: cover;
     object-position: top;
-    border-top-left-radius: 20px;
+    border: 5px;
+    border-top-right-radius: 20px;
     cursor: pointer;
 }
 
@@ -84,17 +108,13 @@ img.WebDevImages:hover {
 
 div.webAppInfo {
     display: flex;
+    height: 70vh;
     flex-direction: column;
-    justify-content: center;
-   align-content: center;
+    justify-content: right;
+    padding-left: 10px;
    overflow: auto;
    color:rgb(75, 75, 75);
-   border:5px solid rgb(120, 122, 108);
-   border-left: none;
    border-top-right-radius: 20px;
-   
-   
-   
 }
 
 div.carouselWebStyle
@@ -104,109 +124,112 @@ a.carousel-control-next {
     width:50px;
     overflow: hidden;
     opacity: 1.0;
-    color: rgb(120, 122, 108);
+    color: rgb(255, 255, 255);
+    font-family: 'Roestica';
+    background-color: rgb(75, 75, 75, 0.4);
 }
 
 div.carouselWebStyle
 a.carousel-control-prev:hover,
 div.carouselWebStyle
 a.carousel-control-next:hover {
-   background-color: rgb(120, 122, 108);
-   color: rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255, 0.6);
+   color: rgb(75, 75, 75);
 }
 
 div.carouselWebStyle
 a.carousel-control-prev {
-  border-top-right-radius:20px ;
-  border-bottom-right-radius:20px ;
+  border-top-right-radius:10px ;
+  border-bottom-right-radius:10px ;
   padding-right: 5px;
   margin-left: 12px;
-  border: 3px solid rgb(120, 122, 108);
-  border-left: 5px solid rgb(120, 122, 108);
-  /* border-bottom: 3px solid rgb(75, 75, 75); */
+  padding-bottom: 15px;
 }
 div.carouselWebStyle
 a.carousel-control-next {
-  border-top-left-radius:20px ;
-  border-bottom-left-radius:20px ;
-  padding-bottom: 15px;
+  border-top-left-radius:10px ;
+  border-bottom-left-radius:10px ;
   padding-left: 5px;
   margin-right: 12px;
-  border: 3px solid rgb(120, 122, 108);
-  border-right: 5px solid rgb(120, 122, 108);
-  /* border-bottom: 3px solid rgb(75, 75, 75); */
- 
 }
 
 h2.projectTitle {
     font-family: 'Stranger-slim';
-    border-bottom: 3px solid rgb(120, 122, 108);
-    background-color: transparent;
-    color:rgb(120, 122, 108);
+    width: 100%;
+    background-color: rgb(120, 122, 108);
+    border-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 
-    
+    padding: 5px;
+    color:rgb(255, 255, 255);
 }
 
 p.webAppDesc {
     text-align:justify;
-    /* font-family: 'Stranger-slim'; */
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
     
 }
 
 ul.webAppLinks{
     display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
+    height: 100%;
+    justify-content:center;
+    align-items: flex-end;
     list-style: none;
-    
+  
 }
 ul.webAppLinks li a {
-
+  
    text-align: center;
    font-family: "Stranger-slim";
    color:rgb(237, 154, 31);
-    margin-right: 20px;
-   
+   margin-right: 20px;
 
 }
 
-div.webTechnologies {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    justify-content: center;
-    width: 100%;
-   height: 20vh;
+div.card  {
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(75, 75, 75);
+    border-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 
 
 
 .techTitle {
-    margin-bottom: -5px;
-    font-family: 'Stranger-inline';
+    /* margin-bottom: -5px; */
+    height: 100%;
+    /* padding: 5px; */
+    font-family: 'Stranger-slim';
+    font-size: 25px;
     color: rgb(255, 255, 255);
     background-color: rgb(75, 75, 75);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border: none;
+
+    
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
 }
 
-div.techList {
+div.techBody {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    font-weight: 600;
-    align-content: center;
-    height: 100%;
-    overflow: auto;
+overflow: auto;
+height: 100px;
+background-color: rgb(255, 255, 255);
 }
 
-div.techList  p {
-  list-style: none;
-  
- margin-top:10px;
- font-family: "Stranger-slim";
+p.techItem {
+    color:rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
 }
+
 
 .webFeat,
 .webTech {
@@ -218,15 +241,14 @@ div.techList  p {
     border-bottom-right-radius: 20px;
 }
 .featTitle {
-    /* margin-top: 10px; */
- 
-    font-family: 'Stranger-inline';
+
+    width: 100%;
+    font-family: 'Stranger-Slim';
+    font-size: 25px;
     color: rgb(255, 255, 255);
     background-color: rgb(75, 75, 75);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-
+    /* padding: 5px; */
+    border: none;
 }
 
 p.featSubTitle {
@@ -240,34 +262,63 @@ p.featSubTitle {
     /* .webDevContainer {
         height: 90vh;
     } */
+
+    .carouselWebStyle {
+        height: 80vh;
+    }
     div.carouselStylingWeb {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     img.WebDevImages {
-        height: 30vh;
+        height: 32vh;
         width: 100%;
         border-bottom-right-radius: 0px;
         border-top-right-radius: 20px ;
         /* border-right: none; */
-        border: 5px solid rgb(120, 122, 108);
+        /* border: 5px solid rgb(120, 122, 108); */
         /* margin: 10px; */
        
     }
+    div.webOverlay {
+        background-color: rgb(75, 75, 75, 0.3);
+        position: relative;
+        width: inherit;
+        height: 32vh;
+        position: absolute;
+        z-index: 2;
+        overflow: hidden;
+        border: 10px;
+        border-top-right-radius: 20px;
+    
+      }
+    
+      div.webOverlay:hover {
+        background-color: transparent;
+      }
+    
 
     div.webAppInfo {
-        border: 5px solid rgb(120, 122, 108);
+        /* border: 5px solid rgb(120, 122, 108); */
+        padding: 0;
         border-top: none;
         border-top-right-radius: 0px;
     }
-    p.webAppDesc {
+    div.descriptionWrap {
         margin-top: 10px;
-        height: 20vh;
+        height: 25vh;
         overflow: auto;
         margin-right: 30px;
         margin-left: 30px;
-       
+    }
+    p.webAppDesc {
+        margin-right:10px;
+        margin-left:0;
+    }
+
+    ul.webAppLinks {
+        height: 10%;
     }
 
     h1.webDevTitle {
@@ -275,6 +326,7 @@ p.featSubTitle {
         letter-spacing: 10px;
       
     }
+
     div.techList {
         padding: 10px;
         padding-bottom: 10px; 
@@ -294,13 +346,15 @@ a.carousel-control-next {
     opacity: 0.8;
     margin-top: auto;
     margin-bottom: auto;
+    border-radius: 10px;
     
 }
 div.carouselWebStyle
 a.carousel-control-prev {
   border-top-right-radius:20px ;
   border-bottom-right-radius:20px ;
-  border: 3px solid rgb(120, 122, 108);
+  color: rgb(75, 75, 75);
+  /* border: 3px solid rgb(120, 122, 108); */
   padding-right: 4px;
   margin-left: 12px;
 }
@@ -309,10 +363,10 @@ a.carousel-control-next {
   border-top-left-radius:20px ;
   border-bottom-left-radius:20px ;
   padding-bottom: 15px;
+  color:rgb(75, 75, 75);
   /* padding-left: px; */
   margin-right: 12px;
-  border: 3px solid rgb(120, 122, 108);
-  border-right: 5px solid rgb(120, 122, 108);
+  
  
 }
 
