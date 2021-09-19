@@ -33,6 +33,7 @@
       text-align: center;
       margin-top: 20px;
       scroll-snap-align: start;
+      scroll-snap-stop: normal;
   }
 
   h1.photographyTitle {

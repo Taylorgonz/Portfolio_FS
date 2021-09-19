@@ -1,4 +1,5 @@
 import React from 'react';
+import "./style.css";
 
 import Hero from "../Hero/index";
 import About from "../About/index";
@@ -10,7 +11,7 @@ import Upload from '../Upload/index'
 const Main = ({setModalImage, modalImage}) => {
 
     return (
-        <div>
+        <div className="mainWrap">
             <Hero/>
             <About/>
             <Photography setModalImage={setModalImage}/>

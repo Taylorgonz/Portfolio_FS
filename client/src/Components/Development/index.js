@@ -9,12 +9,32 @@ import axios from 'axios'
 const WebDev = ({ setModalImage }) => {
 
     const [webDev, setWebDev] = useState([]);
+    const [tech, setTech] = useState('+');
+    const [group, setGroup] = useState('+');
+
 
 
     const getWebsites = () => {
         axios.get('/api/websites')
             .then(res => setWebDev(res.data))
             .catch(err => setWebDev([err]));
+    }
+
+    const changeTech = () => {
+        if (tech === "+") {
+            setTech('-')
+        }
+        else {
+            setTech('+')
+        }
+    }
+    const changeGroup = () => {
+        if (group === "+") {
+            setGroup('-')
+        }
+        else {
+            setGroup('+')
+        }
     }
 
 
@@ -53,9 +73,6 @@ const WebDev = ({ setModalImage }) => {
 
                             <Accordion className="accordion w-100">
                                 <Card className='accordionCard'>
-                                    <Card.Header className="accordionHeader">
-                                        <AccordionToggle eventKey='0' className='techTitle w-100'>Technologies</AccordionToggle>
-                                    </Card.Header>
                                     <Accordion.Collapse eventKey='0' className='techlist'>
                                         <Card.Body className="techBody">
 
@@ -66,14 +83,15 @@ const WebDev = ({ setModalImage }) => {
                                         </Card.Body>
 
                                     </Accordion.Collapse>
+                                    <Card.Header className="accordionHeader">
+                                        <span className='plusMinus'>{tech}</span>
+                                        <AccordionToggle onClick={changeTech} eventKey='0' className='techTitle w-100'> Technologies</AccordionToggle>
+                                    </Card.Header>
                                 </Card>
 
                                 {web.features.length > 0 &&
 
                                     <Card>
-                                        <Card.Header>
-                                            <AccordionToggle eventKey='1' className='featTitle'> Group Project</AccordionToggle>
-                                        </Card.Header>
                                         <AccordionCollapse eventKey='1' className="" >
                                             <Card.Body className="techBody">
                                                 <p className='featSubTitle'>Features I worked on</p>
@@ -83,6 +101,10 @@ const WebDev = ({ setModalImage }) => {
                                             </Card.Body>
 
                                         </AccordionCollapse>
+                                        <Card.Header className="accordionHeader">
+                                            <span className="plusMinus">{group}</span>
+                                            <AccordionToggle onClick={changeGroup} eventKey='1' className='featTitle'> Group Project</AccordionToggle>
+                                        </Card.Header>
                                     </Card>
                                 }
                             </Accordion>

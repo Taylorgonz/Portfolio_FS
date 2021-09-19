@@ -40,7 +40,7 @@
 h1.webDevTitle {
     color:rgb(237, 154, 31);
     font-family: 'Stranger-Wide';
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     
   
 }
@@ -50,6 +50,9 @@ h1.webDevTitle {
       text-align: center;
       margin-top: 20px;
       scroll-snap-align: start;
+      scroll-snap-stop: normal;
+      overflow: auto;
+
   }
 
   .carouselWebStyle {
@@ -189,6 +192,10 @@ ul.webAppLinks li a {
 
 }
 
+.accordionHeader {
+    display: flex;
+}
+
 div.card  {
     margin-top: 10px;
     border: none;
@@ -198,22 +205,30 @@ div.card  {
     border-top-right-radius: 20px;
 
 }
+div.card-header {
+    border-bottom: none;
+    width: 100%;
+
+}
+
+span.plusMinus {
+  text-align: left;
+  font-family: "Stranger-slim";
+  font-size: 30px;
+
+}
 
 
 
 .techTitle {
-    /* margin-bottom: -5px; */
     height: 100%;
-    /* padding: 5px; */
     font-family: 'Stranger-slim';
     font-size: 25px;
     color: rgb(255, 255, 255);
     background-color: rgb(75, 75, 75);
     border: none;
-
-    
-    /* border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
+    width: 100%;
+    text-align: center;
 }
 
 div.techBody {
