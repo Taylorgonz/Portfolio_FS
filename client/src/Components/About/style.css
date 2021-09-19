@@ -32,7 +32,7 @@
       align-items: center;
       flex-direction: column;
       scroll-snap-align: start;
-      scroll-snap-stop: normal;
+      scroll-snap-stop: always;
       
 
   }

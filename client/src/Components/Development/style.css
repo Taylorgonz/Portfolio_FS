@@ -50,7 +50,7 @@ h1.webDevTitle {
       text-align: center;
       margin-top: 20px;
       scroll-snap-align: start;
-      scroll-snap-stop: normal;
+      scroll-snap-stop: always;
       overflow: auto;
 
   }
