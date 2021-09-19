@@ -31,13 +31,13 @@
       /* font-weight: 700; */
       color: rgb(237, 154, 31);
       text-align: center;
-      margin-top: 20px;
+      /* margin-top: 20px; */
       scroll-snap-align: start;
       scroll-snap-stop: always;
   }
 
   h1.photographyTitle {
-      margin-top: 20px;
+      padding: 20px;
       letter-spacing: 20px;
       font-family: 'Stranger-Wide';
 
@@ -50,11 +50,11 @@
       border-top-right-radius: 20px;
     letter-spacing: 20px;
     word-spacing: 10px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
   }
 
   img.photoImages {
-      height: 82vh;
+      height: 80vh;
       width: 100%;
       object-fit: cover;
       background-position: center;
@@ -68,7 +68,7 @@
     background-color: rgb(75, 75, 75, 0.4);
     position: relative;
     width: 100%;
-    height: 82vh;
+    height: 80vh;
     position: absolute;
     z-index: 2;
   }
