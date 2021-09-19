@@ -1,0 +1,13 @@
+.contactContainer {
+    height: 100vh;
+    scroll-snap-align: start;
+      scroll-snap-stop: normal;
+}
+
+h1.contactTitle {
+    padding: 20px;
+    letter-spacing: 20px;
+    font-family: 'Stranger-Wide';
+    color: rgb(237, 154, 31);
+      text-align: center;
+}

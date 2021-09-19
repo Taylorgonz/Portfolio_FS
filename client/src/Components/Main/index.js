@@ -5,7 +5,7 @@ import Hero from "../Hero/index";
 import About from "../About/index";
 import Photography from "../Photography/index";
 import WebDev from "../Development/index"
-import Upload from '../Upload/index'
+import Contact from "../Contact/index"
 
 
 const Main = ({setModalImage, modalImage}) => {
@@ -16,6 +16,7 @@ const Main = ({setModalImage, modalImage}) => {
             <About/>
             <Photography setModalImage={setModalImage}/>
             <WebDev setModalImage={setModalImage}/>
+            <Contact/>
         </div>
     )
 }

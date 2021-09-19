@@ -32,7 +32,7 @@
       align-items: center;
       flex-direction: column;
       scroll-snap-align: start;
-      scroll-snap-stop: always;
+      scroll-snap-stop: normal;
       
 
   }
@@ -81,13 +81,9 @@
   }
   h1.aboutTitle {
       font-family: "Stranger-Wide";
-      /* font-size: 60px; */
       text-align: center;
-      /* margin-top: 40px; */
-      margin:0;
-      margin-bottom: 20px;
       color:rgb(237, 154, 31);
-      /* border-bottom:2px solid rgb(237, 154, 31); */
+      padding: 20px;
   }
 
   p {
