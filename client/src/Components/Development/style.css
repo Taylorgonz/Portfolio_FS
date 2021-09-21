@@ -49,8 +49,10 @@ h1.webDevTitle {
       color: rgb(255, 255, 255);
       text-align: center;
       margin-top: 20px;
+      margin-bottom: 20px;
       scroll-snap-align: start;
-      scroll-snap-stop: normal;
+      scroll-snap-stop: always;
+      overflow: auto;
       /* overflow: auto; */
 
   }
@@ -78,7 +80,7 @@ h1.webDevTitle {
  
  
   
-  div.webOverlay {
+  /* div.webOverlay {
     background-color: rgb(75, 75, 75, 0.3);
     position: relative;
     width: inherit;
@@ -93,20 +95,29 @@ h1.webDevTitle {
 
   div.webOverlay:hover {
     background-color: transparent;
-  }
+  } */
 
   img.WebDevImages {
-    height: 72vh;
+    height: 70vh;
     width: 100%;
     object-fit: cover;
     object-position: top;
     border: 5px;
     border-top-right-radius: 20px;
     cursor: pointer;
+    box-shadow: 10px 10px 0px rgb(237, 154, 31);
+    border: 2px solid rgb(237, 154, 31);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+div.imgColumn {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.WebDevImages:hover {
-    box-shadow: 5px 5px 6px rgb(75, 75, 75, 0.6);
+    box-shadow: 5px 5px 5px rgb(237, 154, 31);
 }
 
 div.webAppInfo {
@@ -114,10 +125,14 @@ div.webAppInfo {
     height: 70vh;
     flex-direction: column;
     justify-content: right;
-    padding-left: 10px;
    overflow: auto;
    color:rgb(75, 75, 75);
-   border-top-right-radius: 20px;
+   
+   box-shadow: 10px 10px 0px rgb(120, 122, 108);
+    border: 2px solid rgb(120, 122, 108);
+    border-radius: 10px;
+   margin-right: auto;
+   margin-left: auto;
 }
 
 div.carouselWebStyle
@@ -160,9 +175,6 @@ h2.projectTitle {
     font-family: 'Stranger-slim';
     width: 100%;
     background-color: rgb(120, 122, 108);
-    border-radius: 5px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
 
     padding: 5px;
     color:rgb(255, 255, 255);
@@ -198,16 +210,24 @@ ul.webAppLinks li a {
 
 div.card  {
     margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 97%;
     border: none;
-    background-color: rgb(75, 75, 75);
-    border-radius: 5px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 5px -5px 0px rgb(75, 75, 75);
+    border: 2px solid rgb(75, 75, 75);
+    border-radius: 10px;
+   
 
 }
 div.card-header {
     border-bottom: none;
     width: 100%;
+    border-top: 1px solid rgb(75, 75, 75);
+    /* border-radius: 8px; */
+   
 
 }
 
@@ -215,6 +235,7 @@ span.plusMinus {
   text-align: left;
   font-family: "Stranger-slim";
   font-size: 30px;
+  color: rgb(75, 75, 75);
 
 }
 
@@ -224,8 +245,7 @@ span.plusMinus {
     height: 100%;
     font-family: 'Stranger-slim';
     font-size: 25px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
     border: none;
     width: 100%;
     text-align: center;
@@ -234,16 +254,38 @@ span.plusMinus {
 div.techBody {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 overflow: auto;
 height: 100px;
 background-color: rgb(255, 255, 255);
+width: 100%
+
+
 }
 
 p.techItem {
     color:rgb(75, 75, 75);
+    font-size: 15px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    /* justify-content: justify; */
+   
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-left: 5px;
+    height: auto;
 }
+span.dot {
+    height: 8px;
+    width: 8px;
+    background-color:rgb(75, 75, 75);
+    border-radius: 50%;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-right: 6px;
+    /* display: inline-block; */
+  }
 
 
 .webFeat,
@@ -260,8 +302,8 @@ p.techItem {
     width: 100%;
     font-family: 'Stranger-Slim';
     font-size: 25px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
+    /* background-color: rgb(75, 75, 75); */
     /* padding: 5px; */
     border: none;
 }
@@ -280,27 +322,29 @@ p.featSubTitle {
 
     .carouselWebStyle {
         height: 80vh;
+        overflow: auto;
     }
     div.carouselStylingWeb {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+    div.imgColumn {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: 10px;
+        margin-bottom:5px;
+    }
     img.WebDevImages {
-        height: 32vh;
+        height: 25vh;
         width: 100%;
-        border-bottom-right-radius: 0px;
-        border-top-right-radius: 20px ;
-        /* border-right: none; */
-        /* border: 5px solid rgb(120, 122, 108); */
-        /* margin: 10px; */
        
     }
     div.webOverlay {
         background-color: rgb(75, 75, 75, 0.3);
         position: relative;
         width: inherit;
-        height: 32vh;
+        height: 30vh;
         position: absolute;
         z-index: 2;
         overflow: hidden;
@@ -316,13 +360,15 @@ p.featSubTitle {
 
     div.webAppInfo {
         /* border: 5px solid rgb(120, 122, 108); */
-        padding: 0;
-        border-top: none;
-        border-top-right-radius: 0px;
+       
+        height: 30vh;
+        margin:10px;
+        margin-top: 0px;
+        margin-bottom: 8px;
     }
     div.descriptionWrap {
         margin-top: 10px;
-        height: 25vh;
+        height: 20vh;
         overflow: auto;
         margin-right: 30px;
         margin-left: 30px;

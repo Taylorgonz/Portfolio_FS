@@ -15,7 +15,7 @@ const About = () => {
                 About
             </h1>
 
-            <Row className="d-flex">
+            <Row className="mb-auto d-flex">
                 <Col className="d-flex justify-content-center">
                     <img className="aboutImage" src={headshot} />
                 </Col>

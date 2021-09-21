@@ -41,7 +41,7 @@
 #heroTop {
     height: 100vh;
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    scroll-snap-stop: always;
 }
 button.navbar-toggle span {
     margin-left: auto;

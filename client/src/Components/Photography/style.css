@@ -33,7 +33,7 @@
       text-align: center;
       /* margin-top: 20px; */
       scroll-snap-align: start;
-      scroll-snap-stop: normal;
+      scroll-snap-stop: always;
   }
 
   h1.photographyTitle {
@@ -165,9 +165,15 @@
  
 
   @media screen and (max-width: 400px) {
+    h1.photographyTitle {
+      padding: 10px;
+      letter-spacing: 10px;
+      font-family: 'Stranger-Wide';
+
+  }
 
     img.photoImages {
-        height: 25vh;
+        height: 23vh;
         width: 100%;
         /* margin: 10px; */
         object-fit: cover;
@@ -187,7 +193,7 @@
   }
     
   h1.photographyTitle {
-    margin-top: 20px;
+    margin-top: 10px;
     letter-spacing: 10px;
 
 }

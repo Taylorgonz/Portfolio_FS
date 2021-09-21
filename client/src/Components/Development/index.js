@@ -54,11 +54,11 @@ const WebDev = ({ setModalImage }) => {
                     {webDev.map((web, i) =>
                         <Carousel.Item key={i} className="carouselWebItem">
                             <div className='carouselStylingWeb'>
-                                <Col className=' col-lg-8 imgColumn'>
-                                    <div className="webOverlay col-lg-8" />
+                                <Col lg='8' className='imgColumn'>
+                                    {/* <div className="webOverlay col-lg-8" /> */}
                                     <img className="WebDevImages" onClick={() => setModalImage(web.image)} src={web.image} />
                                 </Col>
-                                <Col className='col-lg-4 webAppInfo'>
+                                <Col lg='3' className=' webAppInfo'>
                                     <h2 className="projectTitle">{web.title}</h2>
                                     <div className="descriptionWrap">
                                         <p className="webAppDesc">{web.description}</p>
@@ -71,15 +71,16 @@ const WebDev = ({ setModalImage }) => {
                                 </Col>
                             </div>
 
-                            <Accordion className="accordion w-100">
+                            <Accordion className="accordion ">
                                 <Card className='accordionCard'>
                                     <Accordion.Collapse eventKey='0' className='techlist'>
                                         <Card.Body className="techBody">
 
-
+                                          
                                             {web.teches.length > 0 && web.teches.map((tech, i) =>
-                                                <p key={i} className="techItem col col-6 col-lg-3">{tech.name}</p>
+                                                <p key={i} className="techItem ml-auto mr-auto col col-6 col-lg-3"> <span class="dot"> </span> {tech.name}</p>
                                             )}
+                                          
                                         </Card.Body>
 
                                     </Accordion.Collapse>
@@ -96,7 +97,7 @@ const WebDev = ({ setModalImage }) => {
                                             <Card.Body className="techBody">
                                                 <p className='featSubTitle'>Features I worked on</p>
                                                 {web.features.map((feat, i) =>
-                                                    <p key={i} className="techItem col col-6 col-lg-4"> {feat.name}</p>
+                                                    <p key={i} className="techItem ml-auto mr-auto col col-6 col-lg-4"> <span class="dot"> </span> {feat.name}</p>
                                                 )}
                                             </Card.Body>
 

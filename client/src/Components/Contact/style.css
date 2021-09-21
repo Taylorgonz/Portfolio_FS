@@ -1,7 +1,7 @@
 .contactContainer {
     height: 100vh;
     scroll-snap-align: start;
-      scroll-snap-stop: normal;
+      scroll-snap-stop: always;
 }
 
 h1.contactTitle {
@@ -10,4 +10,88 @@ h1.contactTitle {
     font-family: 'Stranger-Wide';
     color: rgb(237, 154, 31);
       text-align: center;
+}
+
+.contactForm {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 10px 10px 0px rgb(237, 154, 31);
+    border: 2px solid rgb(237, 154, 31);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contactHeader {
+    margin-bottom: auto;
+}
+div.contactForm form {
+
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   font-family: "Stranger-Slim";
+   font-size: x-large;
+}
+div.contactForm form div {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    width: 100%;
+   
+}
+div.contactForm form input,
+div.contactForm form textarea {
+    border-radius: 10px;
+    border: 2px solid rgb(237, 154, 31);
+    margin: 10px;
+    font-family: "Roestica";
+    color:rgb(237, 154, 31);
+}
+
+div.contactResume {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Stranger-Slim";
+    box-shadow: 10px 10px 0px rgb(237, 154, 31);
+    border: 2px solid rgb(237, 154, 31);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 400px) {
+
+    div.contactForm {
+        height: 50vh;
+        padding: 0px;
+        margin-bottom: 10px;
+        
+    }
+    div.contactForm form {
+        flex-direction: column;
+        font-size: large;
+    }
+    div.contactForm form input,
+div.contactForm form textarea {
+    margin-top: 5px;
+
+}
+    div.contactResume {
+        height: 25vh;
+        margin-top: 10px;
+      
+        
+    }
+
 }
