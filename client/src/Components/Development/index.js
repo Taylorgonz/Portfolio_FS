@@ -92,7 +92,7 @@ const WebDev = ({ setModalImage }) => {
 
                                 {web.features.length > 0 &&
 
-                                    <Card>
+                                    <Card className="groupCard">
                                         <AccordionCollapse eventKey='1' className="" >
                                             <Card.Body className="techBody">
                                                 <p className='featSubTitle'>Features I worked on</p>

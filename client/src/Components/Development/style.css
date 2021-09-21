@@ -240,6 +240,10 @@ span.plusMinus {
 }
 
 
+.groupCard {
+    margin-bottom: 20px;
+
+}
 
 .techTitle {
     height: 100%;
@@ -284,14 +288,11 @@ span.dot {
     margin-top:auto;
     margin-bottom: auto;
     margin-right: 6px;
-    /* display: inline-block; */
   }
-
 
 .webFeat,
 .webTech {
     
-    /* border-left: 5px solid rgb(255, 255, 255); */
     color:rgb(75, 75, 75);
     border: 5px solid rgb(75, 75, 75);
     border-bottom-left-radius: 20px;
@@ -303,8 +304,6 @@ span.dot {
     font-family: 'Stranger-Slim';
     font-size: 25px;
     color: rgb(75, 75, 75);
-    /* background-color: rgb(75, 75, 75); */
-    /* padding: 5px; */
     border: none;
 }
 
