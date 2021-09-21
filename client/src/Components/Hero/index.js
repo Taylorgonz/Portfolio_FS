@@ -21,7 +21,7 @@ const Hero = () => {
                                     <Nav.Link href="#About">About</Nav.Link>
                                     <Nav.Link href="#Photography">Photography</Nav.Link>
                                     <Nav.Link href="#WebDev">Web Development</Nav.Link>
-                                    <Nav.Link href="#link">Contact</Nav.Link>
+                                    <Nav.Link href="#Contact">Contact</Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>

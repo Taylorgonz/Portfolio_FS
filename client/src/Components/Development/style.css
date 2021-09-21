@@ -79,24 +79,6 @@ h1.webDevTitle {
   }
  
  
-  
-  /* div.webOverlay {
-    background-color: rgb(75, 75, 75, 0.3);
-    position: relative;
-    width: inherit;
-    height: 72vh;
-    position: absolute;
-    z-index: 2;
-    overflow: hidden;
-    border: 10px;
-    border-top-right-radius: 20px;
-
-  }
-
-  div.webOverlay:hover {
-    background-color: transparent;
-  } */
-
   img.WebDevImages {
     height: 70vh;
     width: 100%;
@@ -117,7 +99,8 @@ div.imgColumn {
 }
 
 img.WebDevImages:hover {
-    box-shadow: 5px 5px 5px rgb(237, 154, 31);
+    border: 2px solid rgb(120, 122, 108);
+    box-shadow: 10px 10px 0px rgb(120, 122, 108);
 }
 
 div.webAppInfo {
@@ -174,10 +157,11 @@ a.carousel-control-next {
 h2.projectTitle {
     font-family: 'Stranger-slim';
     width: 100%;
-    background-color: rgb(120, 122, 108);
+    /* background-color: rgb(120, 122, 108); */
+    border-bottom: 2px solid rgb(120, 122, 108);
 
     padding: 5px;
-    color:rgb(255, 255, 255);
+    color:rgb(120, 122, 108);
 }
 
 p.webAppDesc {

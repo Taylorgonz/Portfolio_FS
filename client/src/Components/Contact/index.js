@@ -11,7 +11,7 @@ function Contact() {
     
     
     return (
-        <Container fluid={true} className='contactContainer'>
+        <Container fluid={true} id='Contact' className='contactContainer'>
             <h1 className="contactTitle">Contact Me</h1>
 
             <Row className='d-flex justify-content-center'>
