@@ -58,7 +58,7 @@ const WebDev = ({ setModalImage }) => {
                                     {/* <div className="webOverlay col-lg-8" /> */}
                                     <img className="WebDevImages" onClick={() => setModalImage(web.image)} src={web.image} />
                                 </Col>
-                                <Col lg='3' className=' webAppInfo'>
+                                <Col lg='3' xs='10' className=' webAppInfo'>
                                     <h2 className="projectTitle">{web.title}</h2>
                                     <div className="descriptionWrap">
                                         <p className="webAppDesc">{web.description}</p>

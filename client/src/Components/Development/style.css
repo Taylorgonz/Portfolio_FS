@@ -115,7 +115,7 @@ div.webAppInfo {
     border: 2px solid rgb(120, 122, 108);
     border-radius: 10px;
    margin-right: auto;
-   margin-left: auto;
+   /* margin-left: auto; */
 }
 
 div.carouselWebStyle
@@ -125,17 +125,18 @@ a.carousel-control-next {
     width:50px;
     overflow: hidden;
     opacity: 1.0;
-    color: rgb(255, 255, 255);
     font-family: 'Roestica';
-    background-color: rgb(75, 75, 75, 0.4);
+    color:rgb(75, 75, 75);
 }
 
 div.carouselWebStyle
 a.carousel-control-prev:hover,
 div.carouselWebStyle
 a.carousel-control-next:hover {
-   background-color: rgb(255, 255, 255, 0.6);
-   color: rgb(75, 75, 75);
+  
+   /* color: rgb(255, 255, 255); */
+   background-color: transparent;
+   text-shadow:-3px 3px rgb(237, 154, 31);
 }
 
 div.carouselWebStyle
@@ -299,12 +300,12 @@ p.featSubTitle {
 
 @media screen and (max-width: 400px) {
 
-    /* .webDevContainer {
-        height: 90vh;
-    } */
+    .webDevContainer {
+        height: 120vh;
+    }
 
     .carouselWebStyle {
-        height: 80vh;
+        height: 90vh;
         overflow: auto;
     }
     div.carouselStylingWeb {
@@ -342,10 +343,9 @@ p.featSubTitle {
     
 
     div.webAppInfo {
-        /* border: 5px solid rgb(120, 122, 108); */
-       
         height: 30vh;
-        margin:10px;
+       margin-right: auto;
+       margin-left: auto;
         margin-top: 0px;
         margin-bottom: 8px;
     }
@@ -359,6 +359,8 @@ p.featSubTitle {
     p.webAppDesc {
         margin-right:10px;
         margin-left:0;
+        font-size: 15px;
+
     }
 
     ul.webAppLinks {
@@ -366,9 +368,7 @@ p.featSubTitle {
     }
 
     h1.webDevTitle {
-        
         letter-spacing: 10px;
-      
     }
 
     div.techList {
@@ -385,31 +385,19 @@ p.featSubTitle {
 a.carousel-control-prev,
 div.carouselWebStyle
 a.carousel-control-next {
-    width:30px;
+    width:25px;
     overflow: hidden;
-    opacity: 0.8;
     margin-top: auto;
     margin-bottom: auto;
-    border-radius: 10px;
     
 }
 div.carouselWebStyle
 a.carousel-control-prev {
-  border-top-right-radius:20px ;
-  border-bottom-right-radius:20px ;
-  color: rgb(75, 75, 75);
-  /* border: 3px solid rgb(120, 122, 108); */
-  padding-right: 4px;
-  margin-left: 12px;
+ 
 }
 div.carouselWebStyle
 a.carousel-control-next {
-  border-top-left-radius:20px ;
-  border-bottom-left-radius:20px ;
-  padding-bottom: 15px;
-  color:rgb(75, 75, 75);
-  /* padding-left: px; */
-  margin-right: 12px;
+
   
  
 }

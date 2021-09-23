@@ -147,8 +147,8 @@
       writing-mode: vertical-lr;
       text-orientation: upright;
       text-decoration: none;
-      color:rgb(75, 75, 75, 0.7);
-      background: rgb(255, 255, 255, 0.6);
+      /* color:rgb(75, 75, 75, 0.7); */
+      text-shadow: -3px 3px rgb(237, 154, 31);
       /* text-shadow: -2px 2px  rgb(75, 75, 75);  */
       
 
@@ -189,7 +189,8 @@
 
     a.carousel-control-prev,
   a.carousel-control-next {
-      margin-bottom: 15px;
+      margin-bottom: auto;
+      margin-top: auto;
   }
     
   h1.photographyTitle {

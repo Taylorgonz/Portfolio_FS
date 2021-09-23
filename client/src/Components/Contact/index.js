@@ -21,21 +21,21 @@ function Contact() {
                         <Row>
 
                             <div>
-                                <label for="Email">Email</label>
-                                <input ref={emailRef} id='Email' type='type' placeholder="" />
+                                {/* <label for="Email">Email</label> */}
+                                <input className="contactInputs" ref={emailRef} id='Email' type='type' placeholder="Email" />
                             </div>
 
                             <div>
-                                <label for="subject">subject</label>
-                                <input ref={subjectRef} id='subject' type='type' placeholder="" />
+                                {/* <label for="subject">subject</label> */}
+                                <input className="contactInputs" ref={subjectRef} id='subject' type='type' placeholder="Subject" />
                             </div>
 
                         </Row>
 
                         <Row>
                             <div>
-                                <label for="Message">Message</label>
-                                <textarea ref={messageRef} id='Message' rows="6" placeholder="" />
+                                {/* <label for="Message">Message</label> */}
+                                <textarea className="contactInputs" ref={messageRef} id='Message' rows="6" placeholder="Message" />
                             </div>
                         </Row>
                     </Form>
