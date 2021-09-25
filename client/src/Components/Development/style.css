@@ -301,11 +301,11 @@ p.featSubTitle {
 @media screen and (max-width: 400px) {
 
     .webDevContainer {
-        height: 120vh;
+        height: 110vh;
     }
 
     .carouselWebStyle {
-        height: 90vh;
+        height:95vh;
         overflow: auto;
     }
     div.carouselStylingWeb {

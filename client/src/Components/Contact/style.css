@@ -10,6 +10,12 @@ h1.contactTitle {
     font-family: 'Stranger-Wide';
     color: rgb(237, 154, 31);
       text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+}
+.contactAlert{
+    color: rgb(237, 62, 31);
+   text-shadow: 2px 2px rgb(237, 154, 31);
 }
 
 .contactForm {
@@ -24,9 +30,7 @@ h1.contactTitle {
     margin-right: auto;
     margin-left: auto;
 }
-.contactHeader {
-    margin-bottom: auto;
-}
+
 div.contactForm form {
 
     text-align: center;
@@ -59,8 +63,33 @@ div.contactForm form textarea {
     padding: 5px;
 }
 
-input.contactInputs {
- 
+div.row div.nameEmail {
+   display: flex;
+   flex-direction: row;
+  
+}
+div.row div.nameEmail input.name{
+  margin-right: auto;
+}
+
+  
+
+
+button.contactButton {
+    border:2px solid rgb(237, 154, 31);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    color: rgb(237, 154, 31);
+    
+}
+button.contactButton:hover {
+    background-color: rgb(237, 154, 31);
+    color: rgb(255, 255, 255);
+
+
+
 }
 
 div.contactResume {
@@ -84,7 +113,7 @@ div.contactResume {
     h2.contactHeader {
         padding-top: 20px;
     }
-
+    
     div.contactForm {
         height: 60vh;
         padding: 0px;
@@ -102,7 +131,7 @@ div.contactForm form textarea {
 
 }
 div.contactForm form textarea {
-    height: 100px;
+    height: 150px;
 }
     div.contactResume {
         height: 25vh;
