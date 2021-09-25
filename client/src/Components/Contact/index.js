@@ -61,22 +61,16 @@ function Contact() {
                         <Row>
 
                             <div className='nameEmail'>
-                                {/* <label for="Email">Email</label> */}
                                 <input className="contactInputs name col-5" ref={nameRef} id='Name' type='type' placeholder="Name" />
                                 <input className="contactInputs email col-6 " ref={emailRef} id='Email' type='type' placeholder="Email" />
                             </div>
 
                             <div>
-                                {/* <label for="subject">subject</label> */}
                                 <input className="contactInputs" ref={subjectRef} id='subject' type='type' placeholder="Subject" />
                             </div>
 
-                       
-
-                        
                             <div>
-                                {/* <label for="Message">Message</label> */}
-                                <textarea className="contactInputs" ref={messageRef} id='Message' rows="6" placeholder="Message" />
+                                <textarea className="contactInputs" ref={messageRef} id='Message' rows="7" placeholder="Message" />
                             </div>
                            
                         </Row>
