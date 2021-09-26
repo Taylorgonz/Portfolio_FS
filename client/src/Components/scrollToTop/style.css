@@ -1,0 +1,32 @@
+div.scroll-to-top {
+    position: fixed;
+    bottom:0;
+    right:0;
+    margin:40px;
+    z-index:2;
+}
+
+h3.scroll-text{
+    color: rgb(237, 154, 31);
+    font-family: "Roestica";
+    background-color:rgb(255, 255, 255, 0.6);
+    box-shadow: 10px 10px rgb(237, 154, 31);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 2px solid rgb(237, 154, 31);
+    border-radius: 20px;
+}
+
+a.scrollNext {
+    color: rgb(237, 154, 31);
+    font-family: "Roestica";
+    background-color:rgb(255, 255, 255, 0.6);
+    box-shadow: 10px 10px rgb(237, 154, 31);
+  padding: 10px;
+    padding-bottom: 40px;
+    border: 2px solid rgb(237, 154, 31);
+    border-radius: 20px;
+    
+}

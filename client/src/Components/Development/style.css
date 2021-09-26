@@ -45,15 +45,12 @@ h1.webDevTitle {
   
 }
   .webDevContainer {
-      height: 100vh;
+      height: 120vh;
       color: rgb(255, 255, 255);
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
       scroll-snap-align: start;
-      scroll-snap-stop: always;
-      overflow: auto;
-      /* overflow: auto; */
 
   }
 
@@ -67,15 +64,10 @@ h1.webDevTitle {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
      justify-content: center;
-     /* align-items: center; */
-     overflow: hidden;
-    
-     
   }
   div.carouselStylingWeb {
       display: flex;
       justify-content: center;
-      
   }
  
  
@@ -306,7 +298,6 @@ p.featSubTitle {
 
     .carouselWebStyle {
         height:95vh;
-        overflow: auto;
     }
     div.carouselStylingWeb {
         display: flex;
@@ -390,16 +381,6 @@ a.carousel-control-next {
     margin-top: auto;
     margin-bottom: auto;
     
-}
-div.carouselWebStyle
-a.carousel-control-prev {
- 
-}
-div.carouselWebStyle
-a.carousel-control-next {
-
-  
- 
 }
 
 div.webTechnologies{

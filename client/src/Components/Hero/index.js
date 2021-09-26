@@ -1,10 +1,44 @@
-import React from "react"
+import React, { useRef, useState, useEffect, useContext } from "react"
 import "./style.css"
-import { Container, Navbar, Nav, NavDropdown} from "react-bootstrap";
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from 'react-scroll';
 
 
 
-const Hero = () => {
+const Hero = ({ setScrollNext }) => {
+
+    const aboutRef = useRef();
+    const photographyRef = useRef();
+    const devRef = useRef();
+    const contactRef = useRef();
+
+    const getNextPage = () => {
+
+        window.addEventListener('scroll', (e) => {
+
+
+
+            if (aboutRef.current.state.active === true) {
+                setScrollNext('Photography')
+            }
+            else if (photographyRef.current.state.active === true) {
+                setScrollNext('WebDev')
+            }
+            else if (devRef.current.state.active === true) {
+                setScrollNext('Contact')
+            }
+            else {
+                setScrollNext('')
+            }
+        })
+    }
+
+    useEffect(() => {
+        getNextPage();
+    })
+
+
+
 
 
     return (
@@ -18,10 +52,38 @@ const Hero = () => {
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="">
-                                    <Nav.Link href="#About">About</Nav.Link>
-                                    <Nav.Link href="#Photography">Photography</Nav.Link>
-                                    <Nav.Link href="#WebDev">Web Development</Nav.Link>
-                                    <Nav.Link href="#Contact">Contact</Nav.Link>
+                                    <Link
+                                        ref={aboutRef}
+                                        activeClass="active"
+                                        to="About"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                    >About</Link>
+                                    <Link
+                                        ref={photographyRef}
+                                        activeClass="active"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        to="Photography"
+                                    >Photography</Link>
+                                    <Link
+                                        ref={devRef}
+                                        activeClass="active"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        to="WebDev"
+                                    >Web Development</Link>
+                                    <Link
+                                        ref={contactRef}
+                                        activeClass="active"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        to="Contact"
+                                    >Contact</Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>

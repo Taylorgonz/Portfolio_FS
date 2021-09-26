@@ -91,8 +91,9 @@ button.contactButton:hover {
 div.contactResume {
     height: 80vh;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
     font-family: "Stranger-Slim";
     box-shadow: 10px 10px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
@@ -100,6 +101,29 @@ div.contactResume {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+div.contactResume div.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+div.contactInfo {
+    padding: 20px;
+    width: 50%;
+}
+div.resumeFile {
+    padding: 20px;
+    width: 50%;
+}
+img.resumeImg {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 0px rgb(120, 122, 108);
+    border: 2px solid rgb(120, 122, 108);
+    border-radius: 10px;
+    
 }
 @media screen and (max-width: 500px) {
 
@@ -130,9 +154,31 @@ div.contactForm form textarea {
     height: 150px;
 }
     div.contactResume {
-        height: 25vh;
+        height: 40vh;
         margin-top: 10px;
       
+        
+    }
+    div.contactInfo {
+        width:100% ;
+    }
+
+    div.contactInfo h3 {
+    
+        font-size:medium;
+    }
+    div.resumeFile {
+        padding: 20px;
+        width: 100%;
+    }
+    img.resumeImg {
+        width: 100%;
+        height: 100px;
+       
+        object-fit: cover;
+        box-shadow: 10px 10px 0px rgb(120, 122, 108);
+        border: 2px solid rgb(120, 122, 108);
+        border-radius: 10px;
         
     }
 

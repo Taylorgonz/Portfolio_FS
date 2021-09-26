@@ -41,7 +41,6 @@
 #heroTop {
     height: 100vh;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
 }
 button.navbar-toggle span {
     margin-left: auto;
@@ -51,7 +50,7 @@ div.navbar-nav {
     padding: 10px;
 }
 
-div.container-fluid div.navbar-nav a.nav-link {
+div.container-fluid div.navbar-nav a {
     margin-left: auto;
     color:rgb(237, 154, 31, 0.8);
     font-size: 35px;

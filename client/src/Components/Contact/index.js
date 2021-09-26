@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react'
 import './style.css';
 import { Container, Card, Form, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
+import resumejpg from './resume/resume.jpg'
+import resumepdf from './resume/resume.pdf'
 
 
 function Contact() {
@@ -80,8 +82,22 @@ function Contact() {
                     </Form>
                 </Col>
 
-                <Col xs='11' lg='5' className="contactResume d-flex justify-content-center">
-                    <h2>Resume</h2>
+                <Col xs='11' lg='5' className="contactResume">
+                    <h2>Contact</h2>
+                    
+                    <Row>
+                        <div className='contactInfo'>
+                            <h3>Name: Taylor Gonzales</h3>
+                            <h3>Email: hello@taylorgonz.com</h3>
+                            <h3>Phone: (940) 453-8585</h3>
+                            
+                        </div>
+                        <div className="resumeFile">
+                            <a target="_blank" href={resumepdf}><img className="resumeImg" src={resumejpg}  /></a>
+
+                        </div>
+                    </Row>
+
                 </Col>
 
             </Row>
