@@ -78,6 +78,7 @@ button.contactButton {
     border-radius: 5px;
     margin:auto;
     color: rgb(237, 154, 31);
+    background-color: transparent;
     
 }
 button.contactButton:hover {
@@ -112,18 +113,113 @@ div.contactResume div.row {
 div.contactInfo {
     padding: 20px;
     width: 50%;
+    text-align: center;
+    
 }
 div.resumeFile {
     padding: 20px;
     width: 50%;
+    
+    
 }
+div.resumeOverlay h2 {
+    display: none;
+  
+} 
 img.resumeImg {
     width: 100%;
     object-fit: cover;
+    object-position: top;
     box-shadow: 10px 10px 0px rgb(120, 122, 108);
     border: 2px solid rgb(120, 122, 108);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+img.resumeImg:hover {
+    box-shadow: 10px 10px 0px rgb(237, 154, 31);
+    border: 2px solid rgb(237, 154, 31);
+}
+img.socialIcons {
+   
+    width:30%;
+    margin:10px;
+    box-shadow: 5px 5px 0px rgb(237, 154, 31);
+    border: 2px solid rgb(237, 154, 31);
+    border-radius: 50%;
+}
+img.socialIcons:hover {
+    box-shadow: 5px 5px 10px rgb(237, 154, 31, 0.6);
+}
+@media screen and (max-width: 992px) {
+    .contactContainer{
+        height: 120vh;
+
+        margin-bottom: 20px;
+    }
+    div.contactForm {
+        height: 65vh;
+        padding: 0px;
+        margin-bottom: 20px;
+        
+    }
     
+    div.contactForm form textarea {
+        height: 200px;
+    }
+   
+    div.contactResume {
+        height: 65vh;
+        margin-top: 10px;
+    }
+    div.contactInfo {
+        width:100% ;
+        margin-top: 0px;
+    }
+
+    div.resumeFile {
+        padding:0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        
+    }
+    div.resumeFile a {
+        text-decoration: none;
+    }
+    
+    img.resumeImg{
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+    }
+
+    img.socialIcons {
+        width:50px;
+        margin:0px;
+        margin-left:10px;
+        margin-right: 10px;
+        box-shadow: 5px 5px 0px rgb(237, 154, 31);
+        border: 2px solid rgb(237, 154, 31);
+        border-radius: 50%;
+    }
+    /* div.resumeOverlay {
+        background-color: rgb(75, 75, 75, 0.6);
+        position: relative;
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        border-radius: 10px;
+        z-index: 1;
+    } */
+    div.resumeOverlay h2 {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        color: rgb(2, 2, 2);
+      
+    } 
 }
 @media screen and (max-width: 500px) {
 
@@ -145,35 +241,41 @@ img.resumeImg {
         font-size: large;
     }
     div.contactForm form input,
-div.contactForm form textarea {
+    div.contactForm form textarea {
     margin-top: 5px;
     font-size: medium;
+    }
 
-}
-div.contactForm form textarea {
+    div.contactForm form textarea {
     height: 150px;
-}
+    }   
+
     div.contactResume {
         height: 40vh;
         margin-top: 10px;
-      
-        
     }
+
     div.contactInfo {
         width:100% ;
+        margin-top: 0px;
     }
 
     div.contactInfo h3 {
     
         font-size:medium;
+        text-align: center;
+    
     }
     div.resumeFile {
-        padding: 20px;
+        padding:0px;
+        padding-left: 20px;
+        padding-right: 20px;
         width: 100%;
     }
     img.resumeImg {
         width: 100%;
         height: 100px;
+        margin-top:0px;
        
         object-fit: cover;
         box-shadow: 10px 10px 0px rgb(120, 122, 108);
@@ -181,5 +283,31 @@ div.contactForm form textarea {
         border-radius: 10px;
         
     }
+    img.socialIcons {
+        width:50px;
+        margin:0px;
+        margin-left:10px;
+        margin-right: 10px;
+        box-shadow: 5px 5px 0px rgb(237, 154, 31);
+        border: 2px solid rgb(237, 154, 31);
+        border-radius: 50%;
+    }
+    div.resumeOverlay {
+        background-color: rgb(75, 75, 75, 0.6);
+        position: relative;
+        width:80%;
+        height: 100px;
+        position: absolute;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    div.resumeOverlay h2 {
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+      
+    } 
 
 }

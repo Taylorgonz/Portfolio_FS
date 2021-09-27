@@ -45,7 +45,7 @@ h1.webDevTitle {
   
 }
   .webDevContainer {
-      height: 120vh;
+      height: 110vh;
       color: rgb(255, 255, 255);
       text-align: center;
       margin-top: 20px;
@@ -159,8 +159,7 @@ h2.projectTitle {
 
 p.webAppDesc {
     text-align:justify;
-    margin-right: 80px;
-    margin-left: 80px;
+    margin:20px;
     
 }
 
@@ -191,7 +190,7 @@ div.card  {
     margin-left: auto;
     width: 97%;
     border: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
     box-shadow: 5px -5px 0px rgb(75, 75, 75);
     border: 2px solid rgb(75, 75, 75);
@@ -230,32 +229,35 @@ span.plusMinus {
     border: none;
     width: 100%;
     text-align: center;
+    background-color: transparent;
 }
 
 div.techBody {
     display: flex;
+    /* flex-direction: column; */
+    text-align: justify;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    
 overflow: auto;
 height: 100px;
+padding: 10px;
 background-color: rgb(255, 255, 255);
-width: 100%
 
 
 }
 
 p.techItem {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
     color:rgb(75, 75, 75);
     font-size: 15px;
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: justify; */
    
-    margin-bottom: auto;
-    margin-top: auto;
     padding-top: 10px;
     padding-left: 5px;
-    height: auto;
+    
 }
 span.dot {
     height: 8px;
@@ -282,12 +284,66 @@ span.dot {
     font-size: 25px;
     color: rgb(75, 75, 75);
     border: none;
+    background-color: transparent;
 }
 
 p.featSubTitle {
     margin-bottom: -40px;
     font-family: 'Stranger-wide';
     font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+
+    div.carouselStylingWeb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .webDevContainer {
+        height: 110vh;
+    }
+
+    .carouselWebStyle {
+        height:100vh;
+    }
+    div.imgColumn {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: 10px;
+        margin-bottom:5px;
+    }
+    img.WebDevImages {
+        height: 40vh;
+        width: 100%;
+    }
+    div.webAppInfo {
+        height: 30vh;
+       margin-right: auto;
+       margin-left: auto;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    div.descriptionWrap {
+        margin-top: 10px;
+        height: 50vh;
+        overflow: auto;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    p.webAppDesc {
+        margin-right:10px;
+        margin-left:0;
+        font-size: 15px;
+
+    }
+    p.techItem {
+        
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+  
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -315,22 +371,6 @@ p.featSubTitle {
         width: 100%;
        
     }
-    div.webOverlay {
-        background-color: rgb(75, 75, 75, 0.3);
-        position: relative;
-        width: inherit;
-        height: 30vh;
-        position: absolute;
-        z-index: 2;
-        overflow: hidden;
-        border: 10px;
-        border-top-right-radius: 20px;
-    
-      }
-    
-      div.webOverlay:hover {
-        background-color: transparent;
-      }
     
 
     div.webAppInfo {

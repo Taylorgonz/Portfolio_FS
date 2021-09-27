@@ -9,8 +9,7 @@ import axios from 'axios'
 const WebDev = ({ setModalImage }) => {
 
     const [webDev, setWebDev] = useState([]);
-    const [tech, setTech] = useState('+');
-    const [group, setGroup] = useState('+');
+    
 
 
 
@@ -20,20 +19,12 @@ const WebDev = ({ setModalImage }) => {
             .catch(err => setWebDev([err]));
     }
 
-    const changeTech = () => {
-        if (tech === "+") {
-            setTech('-')
+    const changePlusMinus = (e) => {
+        if(e.target.previousSibling.innerHTML == "+"){
+            e.target.previousSibling.innerHTML = '-'
         }
         else {
-            setTech('+')
-        }
-    }
-    const changeGroup = () => {
-        if (group === "+") {
-            setGroup('-')
-        }
-        else {
-            setGroup('+')
+            e.target.previousSibling.innerHTML = '+'
         }
     }
 
@@ -58,7 +49,7 @@ const WebDev = ({ setModalImage }) => {
                                     {/* <div className="webOverlay col-lg-8" /> */}
                                     <img className="WebDevImages" onClick={() => setModalImage(web.image)} src={web.image} />
                                 </Col>
-                                <Col lg='3' xs='10' className=' webAppInfo'>
+                                <Col lg='3' xs="11" className=' webAppInfo'>
                                     <h2 className="projectTitle">{web.title}</h2>
                                     <div className="descriptionWrap">
                                         <p className="webAppDesc">{web.description}</p>
@@ -76,17 +67,16 @@ const WebDev = ({ setModalImage }) => {
                                     <Accordion.Collapse eventKey='0' className='techlist'>
                                         <Card.Body className="techBody">
 
-                                          
                                             {web.teches.length > 0 && web.teches.map((tech, i) =>
                                                 <p key={i} className="techItem ml-auto mr-auto col col-6 col-lg-3"> <span class="dot"> </span> {tech.name}</p>
                                             )}
-                                          
+
                                         </Card.Body>
 
                                     </Accordion.Collapse>
-                                    <Card.Header className="accordionHeader">
-                                        <span className='plusMinus'>{tech}</span>
-                                        <AccordionToggle onClick={changeTech} eventKey='0' className='techTitle w-100'> Technologies</AccordionToggle>
+                                    <Card.Header onClick={(e)=> changePlusMinus(e)} className="accordionHeader">
+                                        <span className='plusMinus'>+</span>
+                                        <AccordionToggle eventKey='0' className='techTitle w-100'> Technologies</AccordionToggle>
                                     </Card.Header>
                                 </Card>
 
@@ -95,16 +85,15 @@ const WebDev = ({ setModalImage }) => {
                                     <Card className="groupCard">
                                         <AccordionCollapse eventKey='1' className="" >
                                             <Card.Body className="techBody">
-                                                <p className='featSubTitle'>Features I worked on</p>
                                                 {web.features.map((feat, i) =>
-                                                    <p key={i} className="techItem ml-auto mr-auto col col-6 col-lg-4"> <span class="dot"> </span> {feat.name}</p>
+                                                    <p key={i} className="techItem ml-auto mr-auto col col-6 col-lg-2"> <span class="dot"> </span> {feat.name}</p>
                                                 )}
                                             </Card.Body>
 
                                         </AccordionCollapse>
-                                        <Card.Header className="accordionHeader">
-                                            <span className="plusMinus">{group}</span>
-                                            <AccordionToggle onClick={changeGroup} eventKey='1' className='featTitle'> Group Project</AccordionToggle>
+                                        <Card.Header onClick={(e)=> changePlusMinus(e)} className="accordionHeader">
+                                            <span className="plusMinus">+</span>
+                                            <AccordionToggle  eventKey='1' className='featTitle'> Group Project</AccordionToggle>
                                         </Card.Header>
                                     </Card>
                                 }

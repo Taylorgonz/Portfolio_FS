@@ -5,28 +5,84 @@ div.scroll-to-top {
     margin:40px;
     z-index:2;
 }
+div.scroll-to-top div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    background-color:rgb(255, 255, 255, 0.6);
+    box-shadow: 10px 10px rgb(237, 154, 31);
+    margin-top:auto;
+    text-align: center;
+    width: 80px;
+    height: 105px;
+    border: 2px solid rgb(237, 154, 31);
+    border-radius: 20px;
+}
 
 h3.scroll-text{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
     color: rgb(237, 154, 31);
     font-family: "Roestica";
-    background-color:rgb(255, 255, 255, 0.6);
-    box-shadow: 10px 10px rgb(237, 154, 31);
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border: 2px solid rgb(237, 154, 31);
-    border-radius: 20px;
-}
-
-a.scrollNext {
-    color: rgb(237, 154, 31);
-    font-family: "Roestica";
-    background-color:rgb(255, 255, 255, 0.6);
-    box-shadow: 10px 10px rgb(237, 154, 31);
-  padding: 10px;
-    padding-bottom: 40px;
-    border: 2px solid rgb(237, 154, 31);
-    border-radius: 20px;
+    margin-top: 30px;
+    font-size: x-large;
+   
+   
+    
     
 }
+
+.scrollArrow {
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    border: solid rgb(237, 154, 31);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 8px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  @media screen and (max-width: 768px) {
+
+    div.scroll-to-top div {
+        width: 60px;
+        height: 90px;
+    }
+    div.scroll-to-top {
+    
+        margin:25px;
+      
+    }
+
+    h3.scroll-text {
+        font-size: medium;
+    }
+    .scrollArrow {
+        padding: 5px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    div.scroll-to-top div {
+        width: 60px;
+        height: 90px;
+    }
+    div.scroll-to-top {
+    
+        margin:25px;
+      
+    }
+
+    h3.scroll-text {
+        font-size: medium;
+    }
+    .scrollArrow {
+        padding: 5px;
+    }
+
+  }

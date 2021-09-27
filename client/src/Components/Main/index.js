@@ -11,15 +11,14 @@ import ScrollToTop from "../scrollToTop/index"
 
 const Main = ({setModalImage, modalImage}) => {
 
-    const [scrollNext, setScrollNext ] = useState('');
     return (
         <div className="mainWrap">
-            <Hero setScrollNext={setScrollNext}/>
+            <Hero/>
             <About/>
             <Photography setModalImage={setModalImage}/>
             <WebDev setModalImage={setModalImage}/>
             <Contact/>
-            <ScrollToTop scrollNext={scrollNext} />
+            <ScrollToTop/>
             
         </div>
     )

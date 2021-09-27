@@ -3,7 +3,7 @@ import {Link, animateScroll as scroll} from 'react-scroll';
 
 import "./style.css";
 
-function ScrollToTop({scrollNext}) {
+function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
 
@@ -34,16 +34,10 @@ function ScrollToTop({scrollNext}) {
   return (
     <div className="scroll-to-top">
       {isVisible && (
-          <>
         <div onClick={scrollToTop}>
+            <i class="scrollArrow up"></i>
           <h3 className="scroll-text">Go up!</h3>
         </div>
-        {scrollNext  && 
-            <div onClick={scrollToTop}>
-        <Link className="scrollNext"
-        to={scrollNext}>{scrollNext}</Link>
-      </div>}
-      </>
         
       )}
     </div>

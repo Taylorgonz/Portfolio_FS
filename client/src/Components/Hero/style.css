@@ -61,7 +61,6 @@ div.container-fluid div.navbar-nav a {
 }
 nav.navbar {
     margin-right: auto;
-    /* width: 100%; */
     font-family: 'Roestica';
 }
 
@@ -116,7 +115,31 @@ nav.navbar {
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
+
 /* -------------- mobile------------------- */
+@media screen and (max-width: 850px) {
+    .heroImg {
+        background-image:  url("./images/web-hero-small.png");
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center bottom;
+        
+    }
+}
+
+@media  screen and (max-width: 720px ) {
+    .heroImg {
+        background-image:  url("./images/mobile-hero-large.png");
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center bottom;
+        
+    }
+}
+
+
 @media screen and (max-width: 400px) {
     .heroImg {
         background-image:  url("./images/portfolio-mobile-text.png");

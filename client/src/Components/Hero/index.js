@@ -5,37 +5,14 @@ import { Link } from 'react-scroll';
 
 
 
-const Hero = ({ setScrollNext }) => {
+const Hero = () => {
 
     const aboutRef = useRef();
     const photographyRef = useRef();
     const devRef = useRef();
     const contactRef = useRef();
 
-    const getNextPage = () => {
-
-        window.addEventListener('scroll', (e) => {
-
-
-
-            if (aboutRef.current.state.active === true) {
-                setScrollNext('Photography')
-            }
-            else if (photographyRef.current.state.active === true) {
-                setScrollNext('WebDev')
-            }
-            else if (devRef.current.state.active === true) {
-                setScrollNext('Contact')
-            }
-            else {
-                setScrollNext('')
-            }
-        })
-    }
-
-    useEffect(() => {
-        getNextPage();
-    })
+   
 
 
 
