@@ -179,9 +179,11 @@
 
   @media screen and (max-width: 400px) {
     h1.photographyTitle {
-      padding: 10px;
+      padding: 0px;
+      padding-top: 20px;
       letter-spacing: 10px;
       font-family: 'Stranger-Wide';
+      font-size: x-large;
 
   }
 

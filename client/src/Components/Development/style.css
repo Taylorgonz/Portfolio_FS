@@ -41,6 +41,7 @@ h1.webDevTitle {
     color:rgb(237, 154, 31);
     font-family: 'Stranger-Wide';
   padding: 20px;
+ 
     
   
 }
@@ -348,6 +349,13 @@ p.featSubTitle {
 
 @media screen and (max-width: 400px) {
 
+    h1.webDevTitle {
+        color:rgb(237, 154, 31);
+        font-family: 'Stranger-Wide';
+        padding:0px;
+      padding-top: 20px;
+      font-size: x-large;
+    }
     .webDevContainer {
         height: 100vh;
     }

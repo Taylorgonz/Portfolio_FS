@@ -222,7 +222,12 @@ img.socialIcons:hover {
     } 
 }
 @media screen and (max-width: 500px) {
-
+    h1.contactTitle {
+        padding: 0px;
+        padding-top: 20px;
+        font-size: x-large;
+        
+    }
     .contactContainer{
         height: 120vh;
     }
