@@ -349,8 +349,8 @@ p.carouselTitle {
     div.projectSelector {
         width: 80%;
         height: auto; 
-       margin-right: auto;
-       margin-left: auto;
+       margin-top: auto;
+       margin-bottom: auto;
     }
     div.carouselSelectorWrap{
         margin-top: auto;
