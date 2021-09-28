@@ -9,25 +9,25 @@ const About = () => {
 
 
     return (
-        <Container className="aboutContainer" >
+        <Container fluid={true} className="aboutContainer" >
 
             <h1 id="About" className="aboutTitle">
                 About
             </h1>
 
-            <Row className="mb-auto d-flex">
-                <Col className="d-flex justify-content-center">
+            <div className=" aboutRow mb-auto d-flex">
+                
+                <div className="aboutDiv">
+                   
                     <img className="aboutImage" src={headshot} />
-                </Col>
-                <Col className="aboutDiv">
-                    <Row>
                         <p >
                             Portland, Maine based Photographer, Web Developer, and Logo Designer. Lover of good design, saturated sunsets, and all things nature.
+                          
                         </p>
-                    </Row>
-                </Col>
+                    
+                </div>
 
-            </Row>
+            </div>
         </Container>
     )
 }

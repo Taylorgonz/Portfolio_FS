@@ -9,13 +9,13 @@ import Contact from "../Contact/index"
 import ScrollToTop from "../scrollToTop/index"
 
 
-const Main = ({setModalImage, modalImage}) => {
+const Main = ({setModalImage, setModalMain}) => {
 
     return (
         <div className="mainWrap">
             <Hero/>
             <About/>
-            <Photography setModalImage={setModalImage}/>
+            <Photography setModalMain={setModalMain} setModalImage={setModalImage}/>
             <WebDev setModalImage={setModalImage}/>
             <Contact/>
             <ScrollToTop/>

@@ -10,7 +10,7 @@ import { useAuthStat, useAuthState } from '../../firebase'
 
 
 
-const Upload = ({ setModalImage, modalImage }) => {
+const Upload = ({ setModalMain, setModalImage}) => {
     const [photos, setPhotos] = useState([]);
     const [webDev, setWebDev] = useState([]);
     const [previewPhotos, setPreviewPhotos] = useState("");
@@ -22,7 +22,7 @@ const Upload = ({ setModalImage, modalImage }) => {
     let webLink = useRef();
     let webGithub = useRef();
 
-    console.log(webDev)
+ 
 
     const getPics = () => {
         axios.get('/api/photos')
@@ -148,7 +148,7 @@ const Upload = ({ setModalImage, modalImage }) => {
                 {
                     previewPhotos &&
                     <Col s='12'>
-                        <img onClick={() => setModalImage(previewPhotos)} className="previewImage" src={previewPhotos} />
+                        <img onClick={() => setModalMain(previewPhotos)} className="previewImage" src={previewPhotos} />
                     </Col>
                 }
             </Row>
@@ -158,7 +158,10 @@ const Upload = ({ setModalImage, modalImage }) => {
                 {photos.map((photo, i) =>
                     <Col m='auto' className='uploadedImagesWrapper justify-content-center'>
 
-                        <img onClick={() => setModalImage(photo.url)} className="photoImagesUpload" key={i} src={photo.url}></img>
+                        <img onClick={() =>{
+                             setModalMain(photo.url)
+                             setModalImage(photos)
+                        }} className="photoImagesUpload" key={i} src={photo.url}></img>
 
                     </Col>
                 )}
