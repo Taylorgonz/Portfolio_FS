@@ -53,6 +53,7 @@ button.navbar-toggle span {
 div.navbar-nav {
     margin-left: auto;
     padding: 10px;
+    
 }
 
 div.container-fluid div.navbar-nav a {
@@ -60,6 +61,7 @@ div.container-fluid div.navbar-nav a {
     color: rgb(237, 154, 31, 0.8);
     font-size: 35px;
     padding: 15px;
+    cursor: pointer;
 }
 
 .navbar-light {
