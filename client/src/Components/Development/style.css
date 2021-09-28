@@ -111,34 +111,6 @@ div.webAppInfo {
    
 }
 
-/* div.carouselWebStyle a.carousel-control-prev, div.carouselWebStyle a.carousel-control-next {
-    width: 50px;
-    overflow: hidden;
-    opacity: 1.0;
-    font-family: 'Roestica';
-    color: rgb(75, 75, 75);
-}
-
-div.carouselWebStyle a.carousel-control-prev:hover, div.carouselWebStyle a.carousel-control-next:hover {
-    
-    background-color: transparent;
-    text-shadow: -3px 3px rgb(237, 154, 31);
-}
-
-div.carouselWebStyle a.carousel-control-prev {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-right: 5px;
-    margin-left: 12px;
-    padding-bottom: 15px;
-}
-
-div.carouselWebStyle a.carousel-control-next {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding-left: 5px;
-    margin-right: 12px;
-} */
 
 h2.projectTitle {
     font-family: 'Stranger-slim';
@@ -217,7 +189,7 @@ span.plusMinus {
 
 div.techBody {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     text-align: justify;
     flex-wrap: wrap;
     justify-content: center;
@@ -264,9 +236,11 @@ span.dot {
     background-color: transparent;
 }
 
-.featTitle span {
+.accordionHeader span {
+    color: rgb(75, 75, 75);
 
     font-size: medium;
+    z-index: 0;
 }
 
 div.projectSelector {
@@ -415,14 +389,11 @@ p.carouselTitle {
         font-size: x-large;
     }
     .webDevContainer {
-        height: 120vh;
+        height: 130vh;
     }
-    .carouselWebItem {
-        height: 100vh;
-        /* overflow: auto; */
-    }
+   
     .carouselWebStyle {
-        height: 100vh;
+        height: 110vh;
         flex-direction: column;
     }
     div.carouselStylingWeb {

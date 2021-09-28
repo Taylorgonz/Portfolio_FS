@@ -54,7 +54,7 @@ const WebDev = ({ setModalMain }) => {
                                 <img className="WebDevImages" onClick={() => {
                                     setModalMain(webDevSelect.image)
                                 }
-                                } src={webDevSelect.image} />
+                                    } src={webDevSelect.image} />
                             </Col>
                             <Col lg='3' xs="12" className=' webAppInfo'>
                                 <h2 className="projectTitle">{webDevSelect.title}</h2>
@@ -93,6 +93,7 @@ const WebDev = ({ setModalMain }) => {
                                         <Card className="groupCard">
                                             <AccordionCollapse eventKey='1' className="" >
                                                 <Card.Body className="techBody">
+                                                    
                                                     {webDevSelect.features.map((feat, i) =>
                                                         <p key={i} className="techItem ml-auto mr-auto col col-6 col-lg-2"> <span class="dot"> </span> {feat.name}</p>
                                                     )}
@@ -101,7 +102,7 @@ const WebDev = ({ setModalMain }) => {
                                             </AccordionCollapse>
                                             <Card.Header onClick={(e) => changePlusMinus(e)} className="accordionHeader">
                                                 <span className="plusMinus">+</span>
-                                                <AccordionToggle eventKey='1' className='featTitle'> Group Project<span>(what I worked on)</span></AccordionToggle>
+                                                <AccordionToggle eventKey='1' className='featTitle'> Group Project</AccordionToggle>
                                             </Card.Header>
                                         </Card>
                                     }
@@ -117,7 +118,7 @@ const WebDev = ({ setModalMain }) => {
                         <div className="carouselSelectorWrap">
                             {webDev.map((web, i) =>
                                 <div className="imageWrap">
-
+                             
                                     <p className="carouselTitle">{web.title}</p>
                                     <img onClick={() => setWebDevSelect(web)} className="carouselSelector " src={web.image} />
                                 </div>
