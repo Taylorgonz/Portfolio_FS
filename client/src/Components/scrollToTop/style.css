@@ -3,7 +3,7 @@ div.scroll-to-top {
     bottom: 0;
     right: 0;
     margin: 40px;
-    z-index: 2;
+    z-index: 1;
 }
 
 div.scroll-to-top div {

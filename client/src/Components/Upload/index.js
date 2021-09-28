@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react"
-import { Link }from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./style.css"
 import { Container, Row, Col } from "react-bootstrap";
 import API from '../../utils/API'
@@ -10,19 +10,23 @@ import { useAuthStat, useAuthState } from '../../firebase'
 
 
 
-const Upload = ({ setModalMain, setModalImage}) => {
+const Upload = ({ setModalMain, setModalImage }) => {
     const [photos, setPhotos] = useState([]);
     const [webDev, setWebDev] = useState([]);
     const [previewPhotos, setPreviewPhotos] = useState("");
     const [loadedImage, setLoadedImage] = useState();
     const [loadedDevImage, setLoadedDevImage] = useState();
+    const [tech, setTech] = useState([])
+    const [features, setFeatures] = useState([])
     let photoCat = useRef()
     let webTitle = useRef();
     let webDesc = useRef();
     let webLink = useRef();
     let webGithub = useRef();
+    let techRef = useRef();
+    let featRef = useRef();
 
- 
+
 
     const getPics = () => {
         axios.get('/api/photos')
@@ -32,8 +36,8 @@ const Upload = ({ setModalMain, setModalImage}) => {
 
     const getWebsites = () => {
         axios.get('/api/websites')
-        .then(res => setWebDev(res.data))
-        .catch(err => setWebDev([err]));
+            .then(res => setWebDev(res.data))
+            .catch(err => setWebDev([err]));
     }
 
 
@@ -99,10 +103,10 @@ const Upload = ({ setModalMain, setModalImage}) => {
                 }).then(
                     setLoadedDevImage(""),
                     setPreviewPhotos(""),
-                     webTitle.current.value ='',
-                     webDesc.current.value ='',
-                     webLink.current.value ='',
-                    webGithub.current.value ='',
+                    webTitle.current.value = '',
+                    webDesc.current.value = '',
+                    webLink.current.value = '',
+                    webGithub.current.value = '',
                     getWebsites()
                 )
 
@@ -111,11 +115,10 @@ const Upload = ({ setModalMain, setModalImage}) => {
     }
 
     useEffect(() => {
-        if (photos.length === 0) 
-        getPics()
+        if (photos.length === 0)
+            getPics()
         getWebsites()
     }, [photos])
-
 
 
 
@@ -125,7 +128,7 @@ const Upload = ({ setModalMain, setModalImage}) => {
         <Container className='uploadContainer' >
             <h1> UPLOAD</h1>
             <button onClick={() => signOut(getAuth())}>  Signout </button>
-            <button><Link style={{color:"black"}} to="/">Homepage</Link></button>
+            <button><Link style={{ color: "black" }} to="/">Homepage</Link></button>
             {/* --------------------- photo uploads ---------------------- */}
             <hr />
             <h2>Photos</h2>
@@ -158,10 +161,10 @@ const Upload = ({ setModalMain, setModalImage}) => {
                 {photos.map((photo, i) =>
                     <Col m='auto' className='uploadedImagesWrapper justify-content-center'>
 
-                        <img onClick={() =>{
-                             setModalMain(photo.url)
-                             setModalImage(photos)
-                        }} className="photoImagesUpload" key={i} src={photo.url}></img>
+                        <img onClick={() => {
+                            setModalMain(photo.url)
+                            setModalImage(photos)
+                        }} className="photoImagesUpload" key={i} src={photo.url}/>
 
                     </Col>
                 )}
@@ -186,29 +189,66 @@ const Upload = ({ setModalMain, setModalImage}) => {
 
                 <label for="appGitHub">GitHub Link</label>
                 <input ref={webGithub} id="appGitHub" type="text" name="appGitHub" />
+                <div className='techFeatInput'>
+                    <div>
+                        <input ref={techRef} id="technology" placeholder="technology" type='text' />
+                        <button type="button" onClick={(e) => {
+                            setTech(arr => [...arr, techRef.current.value])
+                            console.log(tech)
+
+                        }
+                        }>add</button>
+                    </div>
+                    <div className="techDisplay">
+
+                     
+                                {tech.map((name, i) =>
+                                    <p>{name}</p>
+                                )}
+                       
+
+                    </div>
+                    <div>
+                        <input ref={featRef} id="features" placeholder="features" type='text' />
+                        <button type="button" onClick={(e) => {
+                            setFeatures(arr => [...arr, featRef.current.value])
+                        
+                            console.log(tech)
+                        }
+                        }>add</button>
+                    </div>
+                    <div className="featDisplay">
+                                {features.map((name, i) =>
+                                    <p>{name.index}</p>
+                                )}
+                    </div>
+
+
+                </div>
+
                 <button type="button" onClick={(e) => postDevApp()}>Submit</button>
 
             </form>
-            <hr/>
+            <hr />
             <Row className="photoUploadDisplay">
 
-            
-            {webDev.map((web, i) => 
-                <div>
-                    <img className='webDevDisplayImg' src={web.image}/>
-                    <h2>{web.title}</h2>
-                    <h3> Description</h3>
-                    <p>{web.description}</p>
-                    <ul>
-                        <li><a href={web.url}>Site Link</a></li>
-                        <li><a href={web.github_url}>Git Hub</a></li>
-                    </ul>
-                    <hr/>
-                </div>
-            )
-        }
-        </Row>
-            
+
+                {webDev.map((web, i) =>
+                    <div>
+                        <img className='webDevDisplayImg' src={web.image} />
+                        <h2>{web.title}</h2>
+                        <h3> Description</h3>
+                        <p>{web.description}</p>
+                        <ul>
+                            <li><a href={web.url}>Site Link</a></li>
+                            <li><a href={web.github_url}>Git Hub</a></li>
+                        </ul>
+                        <hr />
+                    </div>
+                )
+                }
+            </Row>
+
 
         </Container>
     )

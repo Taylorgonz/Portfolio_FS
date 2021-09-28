@@ -264,27 +264,28 @@ span.dot {
     background-color: transparent;
 }
 
-p.featSubTitle {
-    margin-bottom: -40px;
-    font-family: 'Stranger-wide';
-    font-weight: 500;
+.featTitle span {
+
+    font-size: medium;
 }
 
 div.projectSelector {
     width: 15vw;
-    height: auto; 
+    height: 80vh; 
    margin-right: auto;
    margin-left: auto;
+   
 }
 div.carouselSelectorWrap{
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: auto;
+    
     overflow: auto;
+    height: 75vh;
+    width: auto;
+    
+    
     box-shadow: 10px 10px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
     border-radius: 10px;
@@ -294,6 +295,12 @@ div.carouselSelectorWrap{
   h2.devProjectsTitle {
     color: rgb(75, 75, 75);
     font-family: "Stranger-slim";
+    
+  
+
+}
+div.imageWrap {
+    padding: 5px;
 }
 
 p.carouselTitle {
@@ -311,7 +318,7 @@ p.carouselTitle {
     cursor: pointer;
     border: 2px solid rgb(237, 154, 31);
     border-radius: 10px;
-    margin-bottom: 10px;
+   
   }
   img.carouselSelector:hover {
     box-shadow: 5px 5px 0px rgb(237, 154, 31);
@@ -468,7 +475,7 @@ p.carouselTitle {
     }
 
     div.projectSelector {
-        width: 95vw;
+        width: 90vw;
         height: auto; 
     
     }

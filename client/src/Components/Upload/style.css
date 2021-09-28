@@ -65,3 +65,18 @@ img.webDevDisplayImg {
   object-fit: cover;
   object-position: top;
 }
+div.techFeatInput {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+div.techFeatInput div {
+  margin-right: auto;
+
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+}
