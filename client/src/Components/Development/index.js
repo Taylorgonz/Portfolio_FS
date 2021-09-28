@@ -38,7 +38,6 @@ const WebDev = ({ setModalMain }) => {
         if (webDev.length === 0) getWebsites();
     })
 
-    console.log(webDev)
 
 
     return (
@@ -55,7 +54,7 @@ const WebDev = ({ setModalMain }) => {
                                 <img className="WebDevImages" onClick={() => {
                                     setModalMain(webDevSelect.image)
                                 }
-                                    } src={webDevSelect.image} />
+                                } src={webDevSelect.image} />
                             </Col>
                             <Col lg='3' xs="12" className=' webAppInfo'>
                                 <h2 className="projectTitle">{webDevSelect.title}</h2>
@@ -102,7 +101,7 @@ const WebDev = ({ setModalMain }) => {
                                             </AccordionCollapse>
                                             <Card.Header onClick={(e) => changePlusMinus(e)} className="accordionHeader">
                                                 <span className="plusMinus">+</span>
-                                                <AccordionToggle eventKey='1' className='featTitle'> Group Project</AccordionToggle>
+                                                <AccordionToggle eventKey='1' className='featTitle'> Group Project<span>(what I worked on)</span></AccordionToggle>
                                             </Card.Header>
                                         </Card>
                                     }
@@ -117,8 +116,8 @@ const WebDev = ({ setModalMain }) => {
                         <h2 className="devProjectsTitle">Projects</h2>
                         <div className="carouselSelectorWrap">
                             {webDev.map((web, i) =>
-                                <div>
-                             
+                                <div className="imageWrap">
+
                                     <p className="carouselTitle">{web.title}</p>
                                     <img onClick={() => setWebDevSelect(web)} className="carouselSelector " src={web.image} />
                                 </div>
