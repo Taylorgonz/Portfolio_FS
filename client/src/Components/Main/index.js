@@ -16,7 +16,7 @@ const Main = ({setModalImage, setModalMain}) => {
             <Hero/>
             <About/>
             <Photography setModalMain={setModalMain} setModalImage={setModalImage}/>
-            <WebDev setModalImage={setModalImage}/>
+            <WebDev setModalMain={setModalMain}/>
             <Contact/>
             <ScrollToTop/>
             
