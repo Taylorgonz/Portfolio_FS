@@ -44,7 +44,7 @@ const Photography = ({ setModalImage, setModalMain }) => {
             <Row className='photoRow'>
                 <Col md="4">
                     <h2 className="styleTitles">Life Style</h2>
-                    <Carousel prevLabel='prev' variant='dark' className="carouselStyle">
+                    <Carousel interval={null} prevLabel='prev' variant='dark' className="carouselStyle">
 
                         {lifePhotos.map((photo, i) =>
                             <Carousel.Item onClick={(e) => {
@@ -64,7 +64,7 @@ const Photography = ({ setModalImage, setModalMain }) => {
                 </Col>
                 <Col md="4">
                     <h2 className="styleTitles">Portraits</h2>
-                    <Carousel prevLabel='prev' className="carouselStyle">
+                    <Carousel interval={null} prevLabel='prev' className="carouselStyle">
 
                         {portPhotos.map((photo, i) =>
                             <Carousel.Item onClick={(e) => {
@@ -84,7 +84,7 @@ const Photography = ({ setModalImage, setModalMain }) => {
                 </Col>
                 <Col md="4">
                     <h2 className="styleTitles">Product</h2>
-                    <Carousel prevLabel='prev' className="carouselStyle">
+                    <Carousel interval={null} prevLabel='prev' className="carouselStyle">
 
                         {prodPhotos.map((photo, i) =>
                             <Carousel.Item onClick={(e) => {
