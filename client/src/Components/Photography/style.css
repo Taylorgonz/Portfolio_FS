@@ -1,223 +1,190 @@
 @font-face {
-    font-family: 'Neon';
-    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
+  font-family: 'Neon';
+  src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
-
-  @font-face {
-    font-family: 'Archive';
-    src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-  }
+}
 
 @font-face {
-    font-family:'Stranger-Wide';
-    src: local('Stranger-Wide'), url(../fonts/Stranger-Wide.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
+  font-family: 'Archive';
+  src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
+
 @font-face {
-    font-family:'Stranger-slim';
-    src: local('Stranger-slim'), url(../fonts/Stranger-Slim.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
+  font-family: 'Stranger-Wide';
+  src: local('Stranger-Wide'), url(../fonts/Stranger-Wide.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Stranger-slim';
+  src: local('Stranger-slim'), url(../fonts/Stranger-Slim.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+.photographyContainer {
+  height: 100vh;
+  /* font-weight: 700; */
+  color: rgb(237, 154, 31);
+  text-align: center;
+  /* margin-top: 20px; */
+  scroll-snap-align: start;
+}
+
+h1.photographyTitle {
+  padding: 20px;
+  letter-spacing: 20px;
+  font-family: 'Stranger-Wide';
+}
+
+h2.styleTitles {
+  font-family: "Stranger-slim";
+  color: rgb(75, 75, 75);
+  /* text-shadow: 2px 2px rgb(237, 154, 31); */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 6vh;
+  letter-spacing: 20px;
+  width: 100%;
+  word-spacing: -10px;
+  /* padding-top: 10px; */
+}
+
+img.photoImages {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+div.photoOverlay {
+  background-color: rgb(75, 75, 75, 0.4);
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  z-index: 2;
+}
+
+div.photoOverlay:hover {
+  background-color: transparent;
+}
+
+div.carouselStyle {
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.carouselItem {
+  background-position: center;
+  object-fit: cover;
+}
+
+a.carousel-control-prev, a.carousel-control-next {
+  font-family: "Roestica";
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: x-large;
+  opacity: 1.0;
+  color: rgb(255, 255, 255);
+  width: 30px;
+  z-index: 3;
+  border: 10px;
+}
+
+a.carousel-control-prev:focus, a.carousel-control-next:focus {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a.carousel-control-prev:hover, a.carousel-control-next:hover {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-decoration: none;
+  text-shadow: -3px 3px rgb(237, 154, 31);
+}
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+  display: none;
+}
+
+@media screen and (max-width: 993px) {
+  h2.styleTitles {
+    letter-spacing: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
   }
+}
 
-  .photographyContainer {
-      height: 100vh;
-      
-      /* font-weight: 700; */
-      color: rgb(237, 154, 31);
-      text-align: center;
-      /* margin-top: 20px; */
-      scroll-snap-align: start;
-  }
-
-  h1.photographyTitle {
-      padding: 20px;
-      letter-spacing: 20px;
-      font-family: 'Stranger-Wide';
-
+@media screen and (max-width: 768px) {
+  img.photoImages {
+    height: 23vh;
+    width: 100%;
+    /* margin: 10px; */
+    object-fit: cover;
+    background-position: center;
+    border-radius: 20px;
+    cursor: pointer;
   }
   h2.styleTitles {
-      font-family: "Stranger-slim";
-      color: rgb(75, 75, 75);
-      /* text-shadow: 2px 2px rgb(237, 154, 31); */
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
+    height: auto;
     letter-spacing: 20px;
-    word-spacing: 10px;
-    /* padding-top: 10px; */
   }
+}
 
+@media screen and (max-width: 500px) {
+  h1.photographyTitle {
+    padding: 0px;
+    padding-top: 20px;
+    letter-spacing: 10px;
+    font-family: 'Stranger-Wide';
+    font-size: x-large;
+  }
   img.photoImages {
-      height: 80vh;
-      width: 100%;
-      object-fit: cover;
-      background-position: center;
-      cursor: pointer;
-      z-index: 1;
-      position: relative;
-      
-  }
-
-  div.photoOverlay {
-    background-color: rgb(75, 75, 75, 0.4);
-    position: relative;
+    height: 23vh;
     width: 100%;
-    height: 80vh;
-    position: absolute;
-    z-index: 2;
-  }
-
-  div.photoOverlay:hover {
-    background-color: transparent;
-  }
-   
-
-  
-  div.carouselStyle {
-    width: 100%;
-    display: flex;
-    justify-self: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    overflow: hidden;
-    z-index: 1;
-  }
-
-  .carouselItem {
-    background-position: center;
     object-fit: cover;
+    background-position: center;
+    border-radius: 20px;
+    cursor: pointer;
   }
-
-  div.carouselStyle:hover {
-    /* box-shadow: 5px 5px 8px rgb(75, 75, 75, 0.6); */
+  div.photoOverlay {
+    height: 25vh;
+    border-radius: 20px;
   }
-
-  a.carousel-control-prev,
-  a.carousel-control-next {
-      font-family: "Roestica";
-      writing-mode: vertical-lr;
-      text-orientation: upright;
-      text-decoration: none;
-      font-weight: 900;
-      font-size: x-large;
-      opacity: 1.0;
-      color: rgb(255, 255, 255);
-      padding-bottom: 5px;
-      width: 30px;
-        margin-top: auto;
-        margin-bottom: auto;
-      height:180px;
-      z-index: 3;
-      border: 10px;
-
-  }
-
-  a.carousel-control-prev {
-    border-top-right-radius:20px ;
-    border-bottom-right-radius:20px ;
-    padding-right: 5px;
-    padding-bottom: 20px;
-  }
-  a.carousel-control-next {
-    border-top-left-radius:20px ;
-    border-bottom-left-radius:20px ;
-    padding-bottom: 15px;
-    padding-left: 5px;
-   
-  }
-
-
-  a.carousel-control-prev:focus,
-  a.carousel-control-next:focus {
-      /* font-family: Archive; */
-      writing-mode: vertical-lr;
-      text-orientation: upright;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-  }
-  a.carousel-control-prev:hover,
-  a.carousel-control-next:hover {
-      /* font-family: Archive; */
-      writing-mode: vertical-lr;
-      text-orientation: upright;
-      text-decoration: none;
-      /* color:rgb(75, 75, 75, 0.7); */
-      text-shadow: -3px 3px rgb(237, 154, 31);
-      /* text-shadow: -2px 2px  rgb(75, 75, 75);  */
-      
-
-     
-  }
-
- 
- 
-  span.carousel-control-next-icon,
-  span.carousel-control-prev-icon {
-      visibility: hidden;
-      
-  }
-
-  @media screen and (max-width: 768px) {
-
-    img.photoImages {
-      height: 23vh;
-      width: 100%;
-      /* margin: 10px; */
-      object-fit: cover;
-      background-position: center;
-      border-radius: 20px;
-      
-      cursor: pointer;
-  }
-  }
- 
-
-  @media screen and (max-width: 400px) {
-    h1.photographyTitle {
-      padding: 0px;
-      padding-top: 20px;
-      letter-spacing: 10px;
-      font-family: 'Stranger-Wide';
-      font-size: x-large;
-
-  }
-
-    img.photoImages {
-        height: 23vh;
-        width: 100%;
-        /* margin: 10px; */
-        object-fit: cover;
-        background-position: center;
-        border-radius: 20px;
-        
-        cursor: pointer;
-    }
-    div.photoOverlay {
-      height: 25vh;
-      border-radius: 20px;
-    }
-
-    a.carousel-control-prev,
-  a.carousel-control-next {
-      margin-bottom: auto;
-      margin-top: auto;
-  }
-    
   h1.photographyTitle {
     margin-top: 10px;
     letter-spacing: 10px;
-
-}
+  }
+  a.carousel-control-prev, a.carousel-control-next {
+    font-size: large;
+  }
   h2.styleTitles {
     letter-spacing: 15px;
     word-spacing: 5px;
     padding-top: 10px;
+  }
 }
 
+@media screen and (max-width: 280px) {
+  h1.photographyTitle {
+    font-size: large;
   }
- 
+}

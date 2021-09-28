@@ -7,7 +7,7 @@ import axios from 'axios'
 
 
 
-const Photography = ({ setModalImage }) => {
+const Photography = ({ setModalImage, setModalMain }) => {
     const [portPhotos, setPortPhotos] = useState([]);
     const [prodPhotos, setProdPhotos] = useState([]);
     const [lifePhotos, setLifePhotos] = useState([]);
@@ -47,7 +47,13 @@ const Photography = ({ setModalImage }) => {
                     <Carousel prevLabel='prev' variant='dark' className="carouselStyle">
 
                         {lifePhotos.map((photo, i) =>
-                            <Carousel.Item onClick={() => setModalImage(photo.url)}>
+                            <Carousel.Item onClick={(e) => {
+                                setModalImage(lifePhotos)
+                                setModalMain(photo.url)
+
+
+                            }
+                            } >
                                 <div className="photoOverlay" />
                                 <img className="photoImages" key={photo.id} src={photo.url} />
                             </Carousel.Item>
@@ -61,9 +67,15 @@ const Photography = ({ setModalImage }) => {
                     <Carousel prevLabel='prev' className="carouselStyle">
 
                         {portPhotos.map((photo, i) =>
-                            <Carousel.Item onClick={() => setModalImage(photo.url)}>
-                                <div className="photoOverlay"/>
-                                <img className="photoImages" key={photo.id} src={photo.url}  />
+                            <Carousel.Item onClick={(e) => {
+                                setModalImage(portPhotos)
+                                setModalMain(photo.url)
+
+
+                            }
+                            } >
+                                <div className="photoOverlay" />
+                                <img className="photoImages" key={photo.id} src={photo.url} />
                             </Carousel.Item>
                         )}
 
@@ -75,7 +87,12 @@ const Photography = ({ setModalImage }) => {
                     <Carousel prevLabel='prev' className="carouselStyle">
 
                         {prodPhotos.map((photo, i) =>
-                            <Carousel.Item className="carouselItem" onClick={() => setModalImage(photo.url)}>
+                            <Carousel.Item onClick={(e) => {
+                                setModalImage(prodPhotos)
+                                setModalMain(photo.url)
+
+
+                            }} className="carouselItem" >
                                 <div className="photoOverlay" />
                                 <img className="photoImages" key={photo.id} src={photo.url} />
                             </Carousel.Item>

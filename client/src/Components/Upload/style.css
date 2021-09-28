@@ -1,66 +1,67 @@
 @font-face {
-    font-family: 'Neon';
-    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
+  font-family: 'Neon';
+  src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
-
-  @font-face {
-    font-family: 'Archive';
-    src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-  }
-  .uploadContainer {
-    margin-bottom: 40px;
-  }
-
-  form.photoForm {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  img.previewImage{
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px;
-      width: 100%;
-      height: 300px;
-      
-      object-fit: cover;
-      border-radius: 20px;
-    cursor: pointer;
-  }
-
-  img.photoImagesUpload {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-    margin: 10px;
-    cursor: pointer;
 }
-  div.photoUploadDisplay {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: auto;
-    border: 3px solid black;
-    border-radius: 20px;
-  }
 
-  form.webDevForm {
-    display: flex;
-    flex-direction: column;
-  }
+@font-face {
+  font-family: 'Archive';
+  src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
 
-  img.webDevDisplayImg {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: top;
-  }
+.uploadContainer {
+  margin-bottom: 40px;
+}
+
+form.photoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img.previewImage {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+img.photoImagesUpload {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+div.photoUploadDisplay {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+form.webDevForm {
+  display: flex;
+  flex-direction: column;
+}
+
+img.webDevDisplayImg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}

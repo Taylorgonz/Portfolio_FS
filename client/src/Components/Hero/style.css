@@ -3,48 +3,53 @@
     src: local('Roestica-Rustic'), url(../fonts/Roestica-Rustic.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
+
 @font-face {
     font-family: 'Roestica-Press';
     src: local('Roestica-Press'), url(../fonts/Roestica-Press.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
 }
+
 @font-face {
     font-family: 'Roestica';
     src: local('Roestica'), url(../fonts/Roestica-Regular.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
+
 @font-face {
-    font-family:'Stranger-Wide';
+    font-family: 'Stranger-Wide';
     src: local('Stranger'), url(../fonts/Stranger-WideTexture.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
+
 @font-face {
     font-family: 'Forest';
     src: local('Forest'), url(../fonts/FOREST-CAMP-STAMP.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
-
+}
 
 .heroImg {
-    background-image:  url("./images/portfolio-top-text.png");
+    background-image: url("./images/portfolio-top-text.png");
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center bottom;
-  
 }
+
 #heroTop {
     height: 100vh;
     scroll-snap-align: start;
 }
+
 button.navbar-toggle span {
     margin-left: auto;
 }
+
 div.navbar-nav {
     margin-left: auto;
     padding: 10px;
@@ -52,109 +57,140 @@ div.navbar-nav {
 
 div.container-fluid div.navbar-nav a {
     margin-left: auto;
-    color:rgb(237, 154, 31, 0.8);
+    color: rgb(237, 154, 31, 0.8);
     font-size: 35px;
     padding: 15px;
 }
+
 .navbar-light {
     color: none;
 }
+
 nav.navbar {
     margin-right: auto;
     font-family: 'Roestica';
 }
 
-
 /* ---------down arrow ---------*/
 
 .arrows {
-	width: 60px;
-	height: 82px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 40px;
+    width: 60px;
+    height: 82px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 40px;
 }
 
 .arrows path {
-	stroke: rgb(237, 154, 31);
-	fill: transparent;
-	stroke-width: 6px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+    stroke: rgb(237, 154, 31);
+    fill: transparent;
+    stroke-width: 6px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow
+/*Safari and Chrome*/
+
+    {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
 }
 
 .arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
 }
 
+@media screen and (max-width: 1024px) {
+    .heroImg {
+        background-image: url("./images/ipad-hero.png");
+        height: 90vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center bottom;
+    }
+    div.navbar-nav {
+        margin-left: 0px;
+        padding: 10px;
+        background-color: rgb(251, 249, 248, 0.8);
+        border-radius: 10px;
+    }
+    div.navbar-nav a {
+        margin-right: auto;
+    }
+}
 
 /* -------------- mobile------------------- */
+
 @media screen and (max-width: 850px) {
     .heroImg {
-        background-image:  url("./images/web-hero-small.png");
+        background-image: url("./images/web-hero-small.png");
         height: 90vh;
         width: 100%;
         background-size: cover;
         background-position: center bottom;
-        
     }
 }
 
-@media  screen and (max-width: 720px ) {
+@media screen and (max-width: 768px) {
     .heroImg {
-        background-image:  url("./images/mobile-hero-large.png");
-        height: 90vh;
+        height: 80vh;
         width: 100%;
         background-size: cover;
         background-position: center bottom;
-        
     }
 }
 
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .heroImg {
-        background-image:  url("./images/portfolio-mobile-text.png");
+        background-image: url("./images/portfolio-mobile-text.png");
         height: 90vh;
         width: 100%;
         background-size: cover;
         background-position: center bottom;
-        
     }
-      
-
-    div.heroContainer{
-        margin-left:0px;
-        
-        
+    div.heroContainer {
+        margin-left: 0px;
     }
     div.navbar-nav {
         margin-left: 0px;
@@ -162,10 +198,9 @@ nav.navbar {
         background-color: rgb(251, 249, 248, 0.6);
         border-radius: 10px;
     }
-    
     div.container-fluid div.navbar-nav a.nav-link {
         margin-left: 0px;
-        color:rgb(75, 75, 75);
+        color: rgb(75, 75, 75);
         font-size: x-large;
     }
     #heroTop {
@@ -179,16 +214,11 @@ nav.navbar {
         text-align: center;
         font-size: 50px;
     }
-
     h1.heroTitle {
         text-align: center;
         font-size: 60px;
         margin-top: 0;
         padding-top: 50px;
         color: rgb(75, 75, 75)
-        
     }
-
-   
-    
 }

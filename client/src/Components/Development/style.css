@@ -3,76 +3,74 @@
     src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'Archive';
     src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
 
-  @font-face {
-    font-family:'Stranger-Wide';
+@font-face {
+    font-family: 'Stranger-Wide';
     src: local('Stranger-Wide'), url(../fonts/Stranger-Wide.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
+
 @font-face {
-    font-family:'Stranger-slim';
+    font-family: 'Stranger-slim';
     src: local('Stranger-slim'), url(../fonts/Stranger-Slim.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
+}
+
 @font-face {
-    font-family:'Stranger-inline';
+    font-family: 'Stranger-inline';
     src: local('Stranger-inline'), url(../fonts/Stranger-Inline.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Roestica';
     src: local('Roestica'), url(../fonts/Roestica-Regular.otf) format('opentype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
-    
-h1.webDevTitle {
-    color:rgb(237, 154, 31);
-    font-family: 'Stranger-Wide';
-  padding: 20px;
- 
-    
-  
 }
-  .webDevContainer {
-      height: 110vh;
-      color: rgb(255, 255, 255);
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      scroll-snap-align: start;
 
-  }
+h1.webDevTitle {
+    color: rgb(237, 154, 31);
+    font-family: 'Stranger-Wide';
+    padding: 20px;
+}
 
-  .carouselWebStyle {
-      height: 90vh; 
-      
-      
-  }
+.webDevContainer {
+    height: 110vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+}
 
-  div.carouselWebItem {
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-     justify-content: center;
-  }
-  div.carouselStylingWeb {
-      display: flex;
-      justify-content: center;
-  }
- 
- 
-  img.WebDevImages {
+.carouselWebStyle {
+    height: 90vh;
+}
+
+div.carouselWebItem {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    justify-content: center;
+}
+
+div.carouselStylingWeb {
+    display: flex;
+    justify-content: center;
+}
+
+img.WebDevImages {
     height: 70vh;
     width: 100%;
     object-fit: cover;
@@ -84,8 +82,8 @@ h1.webDevTitle {
     border: 2px solid rgb(237, 154, 31);
     border-radius: 10px;
     margin-bottom: 10px;
-    
 }
+
 div.imgColumn {
     margin-left: auto;
     margin-right: auto;
@@ -101,51 +99,42 @@ div.webAppInfo {
     height: 70vh;
     flex-direction: column;
     justify-content: right;
-   overflow: auto;
-   color:rgb(75, 75, 75);
-   
-   box-shadow: 10px 10px 0px rgb(120, 122, 108);
+    overflow: auto;
+    color: rgb(75, 75, 75);
+    box-shadow: 10px 10px 0px rgb(120, 122, 108);
     border: 2px solid rgb(120, 122, 108);
     border-radius: 10px;
-   margin-right: auto;
-   /* margin-left: auto; */
+    margin-right: auto;
+    /* margin-left: auto; */
 }
 
-div.carouselWebStyle
-a.carousel-control-prev,
-div.carouselWebStyle
-a.carousel-control-next {
-    width:50px;
+div.carouselWebStyle a.carousel-control-prev, div.carouselWebStyle a.carousel-control-next {
+    width: 50px;
     overflow: hidden;
     opacity: 1.0;
     font-family: 'Roestica';
-    color:rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
 }
 
-div.carouselWebStyle
-a.carousel-control-prev:hover,
-div.carouselWebStyle
-a.carousel-control-next:hover {
-  
-   /* color: rgb(255, 255, 255); */
-   background-color: transparent;
-   text-shadow:-3px 3px rgb(237, 154, 31);
+div.carouselWebStyle a.carousel-control-prev:hover, div.carouselWebStyle a.carousel-control-next:hover {
+    /* color: rgb(255, 255, 255); */
+    background-color: transparent;
+    text-shadow: -3px 3px rgb(237, 154, 31);
 }
 
-div.carouselWebStyle
-a.carousel-control-prev {
-  border-top-right-radius:10px ;
-  border-bottom-right-radius:10px ;
-  padding-right: 5px;
-  margin-left: 12px;
-  padding-bottom: 15px;
+div.carouselWebStyle a.carousel-control-prev {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 5px;
+    margin-left: 12px;
+    padding-bottom: 15px;
 }
-div.carouselWebStyle
-a.carousel-control-next {
-  border-top-left-radius:10px ;
-  border-bottom-left-radius:10px ;
-  padding-left: 5px;
-  margin-right: 12px;
+
+div.carouselWebStyle a.carousel-control-next {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 5px;
+    margin-right: 12px;
 }
 
 h2.projectTitle {
@@ -153,39 +142,35 @@ h2.projectTitle {
     width: 100%;
     /* background-color: rgb(120, 122, 108); */
     border-bottom: 2px solid rgb(120, 122, 108);
-
     padding: 5px;
-    color:rgb(120, 122, 108);
+    color: rgb(120, 122, 108);
 }
 
 p.webAppDesc {
-    text-align:justify;
-    margin:20px;
-    
+    text-align: justify;
+    margin: 20px;
 }
 
-ul.webAppLinks{
+ul.webAppLinks {
     display: flex;
     height: 100%;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-end;
     list-style: none;
-  
 }
-ul.webAppLinks li a {
-  
-   text-align: center;
-   font-family: "Stranger-slim";
-   color:rgb(237, 154, 31);
-   margin-right: 20px;
 
+ul.webAppLinks li a {
+    text-align: center;
+    font-family: "Stranger-slim";
+    color: rgb(237, 154, 31);
+    margin-right: 20px;
 }
 
 .accordionHeader {
     display: flex;
 }
 
-div.card  {
+div.card {
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
@@ -196,30 +181,24 @@ div.card  {
     box-shadow: 5px -5px 0px rgb(75, 75, 75);
     border: 2px solid rgb(75, 75, 75);
     border-radius: 10px;
-   
-
 }
+
 div.card-header {
     border-bottom: none;
     width: 100%;
     border-top: 1px solid rgb(75, 75, 75);
     /* border-radius: 8px; */
-   
-
 }
 
 span.plusMinus {
-  text-align: left;
-  font-family: "Stranger-slim";
-  font-size: 30px;
-  color: rgb(75, 75, 75);
-
+    text-align: left;
+    font-family: "Stranger-slim";
+    font-size: 30px;
+    color: rgb(75, 75, 75);
 }
-
 
 .groupCard {
     margin-bottom: 20px;
-
 }
 
 .techTitle {
@@ -240,46 +219,40 @@ div.techBody {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-overflow: auto;
-height: 100px;
-padding: 10px;
-background-color: rgb(255, 255, 255);
-
-
+    overflow: auto;
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 p.techItem {
     display: flex;
     justify-content: center;
     align-content: flex-start;
-    color:rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
     font-size: 15px;
-   
     padding-top: 10px;
     padding-left: 5px;
-    
 }
+
 span.dot {
     height: 8px;
     width: 8px;
-    background-color:rgb(75, 75, 75);
+    background-color: rgb(75, 75, 75);
     border-radius: 50%;
-    margin-top:auto;
+    margin-top: auto;
     margin-bottom: auto;
     margin-right: 6px;
-  }
+}
 
-.webFeat,
-.webTech {
-    
-    color:rgb(75, 75, 75);
+.webFeat, .webTech {
+    color: rgb(75, 75, 75);
     border: 5px solid rgb(75, 75, 75);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.featTitle {
 
+.featTitle {
     width: 100%;
     font-family: 'Stranger-Slim';
     font-size: 25px;
@@ -295,7 +268,6 @@ p.featSubTitle {
 }
 
 @media screen and (max-width: 992px) {
-
     div.carouselStylingWeb {
         display: flex;
         flex-direction: column;
@@ -304,15 +276,14 @@ p.featSubTitle {
     .webDevContainer {
         height: 110vh;
     }
-
     .carouselWebStyle {
-        height:100vh;
+        height: 100vh;
     }
     div.imgColumn {
         margin-left: 0px;
         margin-right: 0px;
         margin: 10px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
     }
     img.WebDevImages {
         height: 40vh;
@@ -320,8 +291,8 @@ p.featSubTitle {
     }
     div.webAppInfo {
         height: 30vh;
-       margin-right: auto;
-       margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: 0px;
         margin-bottom: 8px;
     }
@@ -333,35 +304,30 @@ p.featSubTitle {
         margin-left: 30px;
     }
     p.webAppDesc {
-        margin-right:10px;
-        margin-left:0;
+        margin-right: 10px;
+        margin-left: 0;
         font-size: 15px;
-
     }
     p.techItem {
-        
         margin-right: auto;
         margin-left: auto;
         text-align: center;
-  
     }
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 500px) {
     h1.webDevTitle {
-        color:rgb(237, 154, 31);
+        color: rgb(237, 154, 31);
         font-family: 'Stranger-Wide';
-        padding:0px;
-      padding-top: 20px;
-      font-size: x-large;
+        padding: 0px;
+        padding-top: 20px;
+        font-size: x-large;
     }
     .webDevContainer {
         height: 100vh;
     }
-
     .carouselWebStyle {
-        height:95vh;
+        height: 95vh;
     }
     div.carouselStylingWeb {
         display: flex;
@@ -372,19 +338,16 @@ p.featSubTitle {
         margin-left: 0px;
         margin-right: 0px;
         margin: 10px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
     }
     img.WebDevImages {
         height: 25vh;
         width: 100%;
-       
     }
-    
-
     div.webAppInfo {
         height: 35vh;
-       margin-right: auto;
-       margin-left: auto;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: 0px;
         margin-bottom: 8px;
     }
@@ -396,45 +359,37 @@ p.featSubTitle {
         margin-left: 30px;
     }
     p.webAppDesc {
-        margin-right:10px;
-        margin-left:0;
+        margin-right: 10px;
+        margin-left: 0;
         font-size: 15px;
-
     }
-
     ul.webAppLinks {
         height: 10%;
     }
-
     h1.webDevTitle {
         letter-spacing: 10px;
     }
-
     div.techList {
         padding: 10px;
-        padding-bottom: 10px; 
+        padding-bottom: 10px;
     }
-    
     p.featSubTitle {
         margin: 0px;
     }
-
-
-    div.carouselWebStyle
-a.carousel-control-prev,
-div.carouselWebStyle
-a.carousel-control-next {
-    width:25px;
-    overflow: hidden;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+    div.carouselWebStyle a.carousel-control-prev, div.carouselWebStyle a.carousel-control-next {
+        width: 25px;
+        overflow: hidden;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    div.webTechnologies {
+        display: block;
+        height: 20vh;
+    }
 }
 
-div.webTechnologies{
-    display: block;
-    height: 20vh;
-}
-
-
+@media screen and (max-width: 280px) {
+    h1.webDevTitle {
+        font-size: large;
+    }
 }

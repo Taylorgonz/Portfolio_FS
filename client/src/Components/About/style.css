@@ -1,95 +1,98 @@
 @font-face {
-    font-family: 'Neon';
-    src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
+  font-family: 'Neon';
+  src: local('Neon'), url(../fonts/Neoneon-3zaD6.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
-  }
-
-  @font-face {
-    font-family: 'Archive';
-    src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-  }
-
-  @font-face {
-    font-family:'Stranger-wide';
-    src: local('Stranger-wide'), url(../fonts/Stranger-Wide.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-  }
-  @font-face {
-    font-family: 'Roestica';
-    src: local('Roestica'), url(../fonts/Roestica-Regular.otf) format('opentype');
-    /* other formats include: 'woff2', 'truetype, 'opentype',
-                              'embedded-opentype', and 'svg' */
-  }
-
-  div.aboutContainer {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      scroll-snap-align: start;
-      
-
-  }
-  h1.aboutTitle {
-    font-family: "Stranger-Wide";
-    text-align: center;
-    color:rgb(237, 154, 31);
-    padding: 20px;
-    margin-bottom: auto;
 }
 
-  
-  div.aboutDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
+@font-face {
+  font-family: 'Archive';
+  src: local('Archive'), url(../fonts/Archive-Regular.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
 
-  p {
-      font-family: 'Raleway', sans-serif; 
-      font-weight: 600;
-      text-align: center;
-      
-  }
+@font-face {
+  font-family: 'Stranger-wide';
+  src: local('Stranger-wide'), url(../fonts/Stranger-Wide.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
 
+@font-face {
+  font-family: 'Roestica';
+  src: local('Roestica'), url(../fonts/Roestica-Regular.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+div.aboutContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+h1.aboutTitle {
+  font-family: "Stranger-Wide";
+  text-align: center;
+  color: rgb(237, 154, 31);
+  padding: 20px;
+  margin-bottom: auto;
+}
+
+div.aboutRow {
+  margin-top: auto;
+  height: 85vh;
+  overflow: auto;
+  margin: 20px;
+}
+
+p {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+img.aboutImage {
+  width: auto;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  height: 50vh;
+  box-shadow: 10px 10px 0px rgb(237, 154, 31);
+  border: 2px solid rgb(237, 154, 31);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
   img.aboutImage {
-      height: 75vh;
-      box-shadow: 10px 10px 0px rgb(237, 154, 31);
-      border: 2px solid rgb(237, 154, 31);
-      border-radius: 10px;
+    margin: 0px;
+    height: 30vh;
+    position: relative;
+    top: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* margin-left:10px; */
   }
+}
 
-  
-
-  @media screen and (max-width: 400px) {
-
-    h1.aboutTitle {
-      padding: 0px;
-      padding-top: 20px;
-      font-size: x-large;
-      
+@media screen and (max-width: 500px) {
+  h1.aboutTitle {
+    padding: 0px;
+    padding-top: 20px;
+    font-size: x-large;
   }
-    img.aboutImage {
-        margin:0px;
-        height: 25vh;
-        position: relative;
-        top: 0;
-        /* margin-left:10px; */
-    }
-
-    div.dropdown-menu {
-        /* border: 3px solid rgb(230, 43, 26, 0.7); */
-        
-        /* border: none; */
-      /* background-color: rgb(255, 255, 255, 0.7); */
-        
-        
-    }
+  img.aboutImage {
+    margin: 0px;
+    height: 25vh;
+    position: relative;
+    top: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    /* margin-left:10px; */
   }
+}
