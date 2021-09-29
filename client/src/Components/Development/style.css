@@ -56,15 +56,17 @@ h1.webDevTitle {
 }
 
 
-.carouselWebStyle {
-    height: 90vh;
+.webDevWrapper {
+    height: 95vh;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 
-div.carouselWebItem {
+div.webDevMainDisplay {
   width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 
 }
 
@@ -74,7 +76,7 @@ div.carouselStylingWeb {
 }
 
 img.WebDevImages {
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -84,7 +86,7 @@ img.WebDevImages {
     box-shadow: 10px 10px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
     border-radius: 10px;
-    margin-bottom: 10px;
+   
 }
 
 div.imgColumn {
@@ -99,7 +101,7 @@ img.WebDevImages:hover {
 
 div.webAppInfo {
     display: flex;
-    height: 70vh;
+    height: 65vh;
     flex-direction: column;
     justify-content: right;
     overflow: auto;
@@ -123,9 +125,44 @@ h2.projectTitle {
 
 p.webAppDesc {
     text-align: justify;
+    font-family: "Roestica";
     margin: 20px;
 }
 
+div.groupProjectWrapper {
+    text-align: center;
+    width: 100%;
+    
+}
+h3.groupProjectTitle,
+p.groupProjectSubtitle {
+    font-family: "Stranger-Slim";
+}
+h3.groupProjectTitle {
+    margin-bottom: auto;
+}
+
+p.groupProjectSubtitle {
+    font-size: medium;
+    text-align: center;
+    margin-top: 0px;
+}
+
+ul.groupProjectList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+li.groupProjectItem {
+   font-family: "Roestica";
+   font-size: medium;
+   padding: 5px;
+   margin-right: auto;
+   text-align: left;
+    width:45%;
+}
 ul.webAppLinks {
     display: flex;
     height: 100%;
@@ -141,125 +178,18 @@ ul.webAppLinks li a {
     margin-right: 20px;
 }
 
-.accordionHeader {
-    display: flex;
-}
 
-div.card {
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    box-shadow: 5px -5px 0px rgb(75, 75, 75);
-    border: 2px solid rgb(75, 75, 75);
-    border-radius: 10px;
-}
-
-div.card-header {
-    border-bottom: none;
-    width: 100%;
-    border-top: 1px solid rgb(75, 75, 75);
-    /* border-radius: 8px; */
-}
-
-span.plusMinus {
-    text-align: left;
-    font-family: "Stranger-slim";
-    font-size: 30px;
-    color: rgb(75, 75, 75);
-}
-
-.groupCard {
-    margin-bottom: 20px;
-}
-
-.techTitle {
-    height: 100%;
-    font-family: 'Stranger-slim';
-    font-size: 25px;
-    color: rgb(75, 75, 75);
-    border: none;
-    width: 100%;
-    text-align: center;
-    background-color: transparent;
-}
-
-div.techBody {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    height: 100px;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-}
-
-p.techItem {
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    color: rgb(75, 75, 75);
-    font-size: 15px;
-    padding-top: 10px;
-    padding-left: 5px;
-}
-
-span.dot {
-    height: 8px;
-    width: 8px;
-    background-color: rgb(75, 75, 75);
-    border-radius: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 6px;
-}
-
-.webFeat, .webTech {
-    color: rgb(75, 75, 75);
-    border: 5px solid rgb(75, 75, 75);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.featTitle {
-    width: 100%;
-    font-family: 'Stranger-Slim';
-    font-size: 25px;
-    color: rgb(75, 75, 75);
-    border: none;
-    background-color: transparent;
-}
-
-.accordionHeader span {
-    color: rgb(75, 75, 75);
-
-    font-size: medium;
-    z-index: 0;
-}
 
 div.projectSelector {
-    width: 15vw;
-    height: 80vh; 
-   margin-right: auto;
-   margin-left: auto;
-   
+    width: 85vw;
+ margin:auto;
 }
 div.carouselSelectorWrap{
     
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
     overflow: auto;
-    height: 75vh;
     width: auto;
-    
-    
     box-shadow: 10px 10px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
     border-radius: 10px;
@@ -275,6 +205,8 @@ div.carouselSelectorWrap{
 }
 div.imageWrap {
     padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 p.carouselTitle {
@@ -303,19 +235,22 @@ p.carouselTitle {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
+    }
+    div.webDevMainDisplay {
+        margin-top: 0px;
+        margin-bottom: 0px;
+       
     }
     .webDevContainer {
-        height: 120vh;
-    }
-    .carouselWebStyle {
         height: 110vh;
+    }
+    .webDevWrapper {
+        height: 95vh;
         flex-direction: column;
     }
     div.imgColumn {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin: 10px;
-        margin-bottom: 5px;
+        margin-bottom:20px;
     }
     img.WebDevImages {
         height: 35vh;
@@ -323,17 +258,15 @@ p.carouselTitle {
     }
     div.webAppInfo {
         height: 30vh;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 0px;
-        margin-bottom: 8px;
+      margin-top: auto;
+      margin-bottom: auto;
     }
     div.descriptionWrap {
         margin-top: 10px;
         height: 50vh;
         overflow: auto;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     p.webAppDesc {
         margin-right: 10px;
@@ -349,7 +282,7 @@ p.carouselTitle {
     div.projectSelector {
         width: 80%;
         height: auto; 
-       margin-top: auto;
+       margin-top: 0px;
        margin-bottom: auto;
     }
     div.carouselSelectorWrap{
@@ -389,11 +322,11 @@ p.carouselTitle {
         font-size: x-large;
     }
     .webDevContainer {
-        height: 130vh;
+        height: 100vh;
     }
    
-    .carouselWebStyle {
-        height: 110vh;
+    .webDevWrapper {
+        height: 95vh;
         flex-direction: column;
     }
     div.carouselStylingWeb {
@@ -423,13 +356,15 @@ p.carouselTitle {
         margin-top: 10px;
         height: 20vh;
         overflow: auto;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+       
+    
     }
     p.webAppDesc {
-        margin-right: 10px;
-        margin-left: 0;
+        margin-left: 5px;
         font-size: 15px;
+        text-align: justify;
     }
     ul.webAppLinks {
         height: 10%;
@@ -448,6 +383,7 @@ p.carouselTitle {
     div.projectSelector {
         width: 90vw;
         height: auto; 
+        margin-bottom: 20px;
     
     }
     h2.devProjectsTitle {

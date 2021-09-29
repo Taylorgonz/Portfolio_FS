@@ -50,7 +50,7 @@ div.aboutRow {
   margin: 20px;
 }
 
-p {
+p.aboutParagraph {
   display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;

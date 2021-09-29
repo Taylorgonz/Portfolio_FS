@@ -20,7 +20,7 @@ const About = () => {
                 <div className="aboutDiv">
                    
                     <img className="aboutImage" src={headshot} />
-                        <p >
+                        <p className='aboutParagraph'>
                             Portland, Maine based Photographer, Web Developer, and Logo Designer. Lover of good design, saturated sunsets, and all things nature.
                           
                         </p>
