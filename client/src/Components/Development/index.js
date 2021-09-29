@@ -45,7 +45,7 @@ const WebDev = ({ setModalMain }) => {
             <h1 className="webDevTitle"> Web Development </h1>
 
 
-            <div prevLabel='prev' className="webDevWrapper">
+            <div className="webDevWrapper">
                 <div className="projectSelector">
                     <h2 className="devProjectsTitle">Projects</h2>
                     <div className="carouselSelectorWrap">
@@ -68,7 +68,7 @@ const WebDev = ({ setModalMain }) => {
                             }
                             } src={webDevSelect.image} />
                         </Col>
-                        <Col lg='3' xs="12" className=' webAppInfo'>
+                        <Col lg='3' xs="12" className='webAppInfo'>
                             <h2 className="projectTitle">{webDevSelect.title}</h2>
                             <div className="descriptionWrap">
                                 <p className="webAppDesc">{webDevSelect.description}</p>
