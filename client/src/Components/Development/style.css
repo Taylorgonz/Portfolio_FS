@@ -47,7 +47,7 @@ h1.webDevTitle {
 }
 
 .webDevContainer {
-    height: 120vh;
+    height: 110vh;
     color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 20px;
@@ -247,7 +247,7 @@ p.carouselTitle {
        
     }
     .webDevContainer {
-        height: 120vh;
+        height: 110vh;
     }
     .webDevWrapper {
         height: 95vh;
@@ -324,7 +324,7 @@ p.carouselTitle {
         font-size: x-large;
     }
     .webDevContainer {
-        height: 110vh;
+        height: 100vh;
     }
    
     .webDevWrapper {

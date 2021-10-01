@@ -62,8 +62,8 @@ p.aboutParagraph {
 img.aboutImage {
   width: auto;
   float: left;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   height: 50vh;
   box-shadow: 5px 5px 0px rgb(237, 154, 31);
   border-radius: 5px;
