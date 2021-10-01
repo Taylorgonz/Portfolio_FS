@@ -42,7 +42,7 @@ const Photography = ({ setModalImage, setModalMain }) => {
         <Container fluid={true} id="Photography" className="photographyContainer" >
             <h1 className='photographyTitle'>Photography</h1>
             <Row className='photoRow'>
-                <Col md="4">
+                <Col md="4" xs='12'>
                     <h2 className="styleTitles">Life Style</h2>
                     <Carousel interval={null} prevLabel='prev' variant='dark' className="carouselStyle">
 
@@ -62,7 +62,7 @@ const Photography = ({ setModalImage, setModalMain }) => {
                     </Carousel>
 
                 </Col>
-                <Col md="4">
+                <Col md="4" xs="12">
                     <h2 className="styleTitles">Portraits</h2>
                     <Carousel interval={null} prevLabel='prev' className="carouselStyle">
 
@@ -82,7 +82,7 @@ const Photography = ({ setModalImage, setModalMain }) => {
                     </Carousel>
 
                 </Col>
-                <Col md="4">
+                <Col md="4" xs="12">
                     <h2 className="styleTitles">Product</h2>
                     <Carousel interval={null} prevLabel='prev' className="carouselStyle">
 

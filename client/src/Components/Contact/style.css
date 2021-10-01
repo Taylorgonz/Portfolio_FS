@@ -25,9 +25,9 @@ h1.contactTitle {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    box-shadow: 10px 10px 0px rgb(237, 154, 31);
+    box-shadow: 5px 5px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     margin-right: auto;
     margin-left: auto;
@@ -75,7 +75,7 @@ div.row div.nameEmail input.name {
 
 button.contactButton {
     border: 2px solid rgb(237, 154, 31);
-    border-radius: 5px;
+    border-radius: 2px;
     margin: auto;
     color: rgb(237, 154, 31);
     background-color: transparent;
@@ -93,9 +93,9 @@ div.contactResume {
     align-items: center;
     flex-direction: column;
     font-family: "Stranger-Slim";
-    box-shadow: 10px 10px 0px rgb(237, 154, 31);
+    box-shadow: 5px 5px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -130,7 +130,7 @@ img.resumeImg {
     object-position: top;
     box-shadow: 10px 10px 0px rgb(120, 122, 108);
     border: 2px solid rgb(120, 122, 108);
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
 }

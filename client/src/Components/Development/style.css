@@ -47,7 +47,7 @@ h1.webDevTitle {
 }
 
 .webDevContainer {
-    height: 110vh;
+    height: 120vh;
     color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 20px;
@@ -83,9 +83,9 @@ img.WebDevImages {
     border: 5px;
     border-top-right-radius: 20px;
     cursor: pointer;
-    box-shadow: 10px 10px 0px rgb(237, 154, 31);
-    border: 2px solid rgb(237, 154, 31);
-    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(237, 154, 31);
+    /* border: 2px solid rgb(237, 154, 31); */
+    border-radius: 5px;
    
 }
 
@@ -95,8 +95,8 @@ div.imgColumn {
 }
 
 img.WebDevImages:hover {
-    border: 2px solid rgb(120, 122, 108);
-    box-shadow: 10px 10px 0px rgb(120, 122, 108);
+    /* border: 2px solid rgb(237, 154, 31); */
+    box-shadow: 10px 10px 0px rgb(237, 154, 31);
 }
 
 div.webAppInfo {
@@ -106,9 +106,9 @@ div.webAppInfo {
     justify-content: right;
    
     color: rgb(75, 75, 75);
-    box-shadow: 10px 10px 0px rgb(120, 122, 108);
+    box-shadow: 5px 5px 0px rgb(120, 122, 108);
     border: 2px solid rgb(120, 122, 108);
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right: auto;
    
 }
@@ -121,10 +121,10 @@ div.descriptionWrap {
 h2.projectTitle {
     font-family: 'Stranger-slim';
     width: 100%;
-    /* background-color: rgb(120, 122, 108); */
+    background-color: rgb(120, 122, 108);
     border-bottom: 2px solid rgb(120, 122, 108);
     padding: 5px;
-    color: rgb(120, 122, 108);
+    color: rgb(255, 255, 255);
 }
 
 p.webAppDesc {
@@ -193,9 +193,9 @@ div.carouselSelectorWrap{
     flex-direction: row;
     overflow: auto;
     width: auto;
-    box-shadow: 10px 10px 0px rgb(237, 154, 31);
+    box-shadow: 5px 5px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
 
@@ -225,11 +225,12 @@ p.carouselTitle {
    object-fit: cover;
     object-position: top;
     cursor: pointer;
-    border: 2px solid rgb(237, 154, 31);
-    border-radius: 10px;
+    box-shadow: 2px 2px 0px rgb(237, 154, 31);
+    border-radius: 2px;
    
   }
   img.carouselSelector:hover {
+
     box-shadow: 5px 5px 0px rgb(237, 154, 31);
 }
 
@@ -246,7 +247,7 @@ p.carouselTitle {
        
     }
     .webDevContainer {
-        height: 110vh;
+        height: 120vh;
     }
     .webDevWrapper {
         height: 95vh;
@@ -311,8 +312,6 @@ p.carouselTitle {
         margin-left: 5px;
         cursor: pointer;
         
-        border:1px solid rgb(237, 154, 31);
-        border-radius: 5px;
       }
 }
 
@@ -325,7 +324,7 @@ p.carouselTitle {
         font-size: x-large;
     }
     .webDevContainer {
-        height: 100vh;
+        height: 110vh;
     }
    
     .webDevWrapper {

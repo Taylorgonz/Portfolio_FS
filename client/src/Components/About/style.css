@@ -27,7 +27,7 @@
 }
 
 div.aboutContainer {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,10 +46,12 @@ h1.aboutTitle {
 div.aboutRow {
   margin-top: auto;
   height: 85vh;
-  overflow: auto;
+  width: 90%;
   margin: 20px;
 }
-
+div.aboutDiv {
+  overflow: auto;
+}
 p.aboutParagraph {
   display: block;
   font-family: 'Raleway', sans-serif;
@@ -63,12 +65,19 @@ img.aboutImage {
   margin-right: 30px;
   margin-bottom: 30px;
   height: 50vh;
-  box-shadow: 10px 10px 0px rgb(237, 154, 31);
-  border: 2px solid rgb(237, 154, 31);
-  border-radius: 10px;
+  box-shadow: 5px 5px 0px rgb(237, 154, 31);
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 991px) {
+  div.aboutContainer {
+    height: 70vh;
+  }
+  div.aboutRow {
+    width: 100%;
+    overflow: auto;
+  }
+  
   img.aboutImage {
     margin: 0px;
     height: 30vh;
@@ -81,6 +90,12 @@ img.aboutImage {
 }
 
 @media screen and (max-width: 500px) {
+  div.aboutContainer {
+    height: 95vh;
+  }
+  div.aboutRow {
+    width: 100%;
+  }
   h1.aboutTitle {
     padding: 0px;
     padding-top: 20px;
