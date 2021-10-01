@@ -18,8 +18,10 @@ function Footer() {
                 <li>Axios</li>
             </ul>
             </div>
+            <div className="footerLinks">
             <a href="https://github.com/Taylorgonz/Portfolio_FS" target="_blank">GitHub Repo</a>
            <Link to="/upload">Upload</Link>
+           </div>
         </div>
     )
 }

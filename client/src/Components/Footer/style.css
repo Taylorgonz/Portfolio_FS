@@ -30,18 +30,22 @@ p.footerSubtitle {
     width: 50%;
 }
 .footerContainer li {
-    /* justify-content: center;
-    display: flex; */
-    /* text-align: center; */
     width: 33%;
     list-style-position:inside;
 
 }
 .footerContainer a {
+    margin-right: 20px;
     color: rgb(237, 154, 31);
+    
 }
 .footerContainer a:hover {
     color: rgb(255, 255, 255);
+}
+.footerLinks {
+    width: 100%;
+    justify-content: center;
+    display: flex;
 }
 
 
