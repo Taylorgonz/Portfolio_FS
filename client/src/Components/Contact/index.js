@@ -101,10 +101,10 @@ function Contact() {
 
                         </div>
                         <div className="resumeFile">
-                            <a target="_blank" href={resumepdf}><div className="resumeOverlay">
-                                <h2>Resume</h2>
+                            <div className="resumeOverlay">
+                            <a target="_blank" href={resumepdf}> <h2>Resume</h2></a>
                             </div>
-                            </a>
+                            
                             <a target="_blank" href={resumepdf}><img className="resumeImg" src={resumejpg} /></a>
 
                         </div>

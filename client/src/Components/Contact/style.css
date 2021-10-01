@@ -298,9 +298,13 @@ img.socialIcons:hover {
         height: 45vh;
         margin-top: 10px;
     }
+    div.contactRow {
+        height: 100%;
+        width: 100%;
+    }
     div.contactInfo {
         width: 100%;
-        margin-top: 0px;
+        margin: auto;
     }
     div.contactInfo h3 {
         font-size: medium;
@@ -308,26 +312,33 @@ img.socialIcons:hover {
     }
     div.resumeFile {
         padding: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin: auto;
         width: 100%;
     }
+    img.socialIcons {
+        width: 40px;
+       
+    }
     img.resumeImg {
-        width: 100%;
+        width: 90%;
         height: 12vh;
         margin-top: 0px;
         object-fit: cover;
-        box-shadow: 10px 10px 0px rgb(120, 122, 108);
+        box-shadow: 5px 5px 0px rgb(120, 122, 108);
         border: 2px solid rgb(120, 122, 108);
-        border-radius: 10px;
+        border-radius: 5px;
     }
     div.resumeOverlay {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    div.resumeOverlay a {
         background-color: rgb(75, 75, 75, 0.6);
-        position: relative;
         width: 75%;
         height: 12vh;
         position: absolute;
-        border-radius: 10px;
+        border-radius: 5px;
         z-index: 2;
     }
     div.resumeOverlay h2 {
