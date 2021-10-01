@@ -102,6 +102,7 @@ img.WebDevImages:hover {
 div.webAppInfo {
     display: flex;
     height: 65vh;
+    width: 36%;
     flex-direction: column;
     justify-content: right;
    
@@ -195,19 +196,20 @@ div.carouselSelectorWrap{
     width: auto;
     box-shadow: 5px 5px 0px rgb(237, 154, 31);
     border: 2px solid rgb(237, 154, 31);
-    border-radius: 5px;
+    border-radius: 3px;
   }
   
 
   h2.devProjectsTitle {
     color: rgb(75, 75, 75);
+   
     font-family: "Stranger-slim";
     
   
 
 }
 div.imageWrap {
-    padding: 5px;
+ padding:7px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -255,6 +257,7 @@ p.carouselTitle {
     }
     div.imgColumn {
         margin-bottom:20px;
+        width: 100%;
     }
     img.WebDevImages {
         height: 35vh;
@@ -262,6 +265,7 @@ p.carouselTitle {
     }
     div.webAppInfo {
         height: 30vh;
+       width: 100%;
       margin-top: auto;
       margin-bottom: auto;
     }

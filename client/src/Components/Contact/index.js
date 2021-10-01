@@ -56,7 +56,7 @@ function Contact() {
 
 
             <Row className='d-flex justify-content-center'>
-                <Col xs='11' lg='6' className='contactForm'>
+                <Col xs='11' m='11' lg='6' className='contactForm'>
                     <Form ref={formRef} onSubmit={((e) => {
                         e.preventDefault();
                         contactSubmit()
@@ -85,10 +85,10 @@ function Contact() {
                     </Form>
                 </Col>
 
-                <Col xs='11' lg='5' className="contactResume">
+                <Col xs='11' m='11' lg='5' className="contactResume">
                     <h2>Contact</h2>
 
-                    <Row>
+                    <Row className='contactRow'>
                         <div className='contactInfo'>
                             <h3>Name: Taylor Gonzales</h3>
                             <h3>Phone: (940) 453-8585</h3>

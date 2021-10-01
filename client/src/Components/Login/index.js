@@ -1,4 +1,5 @@
 import React, { useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom'
 import { Form, Button, Card, CardGroup, Container } from 'react-bootstrap';
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
 
@@ -34,8 +35,10 @@ function Login() {
                                 </Form.Group>
                                 <Button className="w-100" type="submit">Login</Button>
                             </Form>
+                            <Link className="text-align-center" to="/">Home Page</Link>
                         </Card>
                     </div>
+                    
                 </Container>
             </>
         </div>

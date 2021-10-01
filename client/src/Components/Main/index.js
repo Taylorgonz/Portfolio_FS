@@ -7,6 +7,7 @@ import Photography from "../Photography/index";
 import WebDev from "../Development/index"
 import Contact from "../Contact/index"
 import ScrollToTop from "../scrollToTop/index"
+import Footer from  '../Footer/index'
 
 
 const Main = ({setModalImage, setModalMain}) => {
@@ -18,7 +19,9 @@ const Main = ({setModalImage, setModalMain}) => {
             <Photography setModalMain={setModalMain} setModalImage={setModalImage}/>
             <WebDev setModalMain={setModalMain}/>
             <Contact/>
+            <Footer/>
             <ScrollToTop/>
+
             
         </div>
     )
