@@ -7,5 +7,5 @@ Portfolio page made using React, Express, MySQL, Sequelize, Cloudinary, and Fire
 
 ## ScreenShots
 
-![screenshot of application](./Images/mainSite.png)
-![screenshot of application](./Images/uploadSite.png)
+![screenshot of application](./client/Images/mainSite.png)
+![screenshot of application](./client/Images/uploadSite.png)
