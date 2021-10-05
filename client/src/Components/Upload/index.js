@@ -2,10 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from "react"
 import { Link } from 'react-router-dom'
 import "./style.css"
 import { Container, Row, Col } from "react-bootstrap";
-import API from '../../utils/API'
 import axios from 'axios'
 import { getAuth, signOut } from 'firebase/auth'
-import { useAuthStat, useAuthState } from '../../firebase'
 
 
 
@@ -57,7 +55,7 @@ const Upload = ({ setModalMain, setModalImage }) => {
         formData.append('file', files);
         formData.append('upload_preset', 'atlyurpl')
         setLoadedImage(formData)
-        console.log(files)
+        
     }
 
     const uploadDevImage = (files) => {
@@ -65,14 +63,14 @@ const Upload = ({ setModalMain, setModalImage }) => {
         formData.append('file', files);
         formData.append('upload_preset', 'atlyurpl')
         setLoadedDevImage(formData)
-        console.log(files)
+        
     }
 
     const postImage = () => {
 
         axios.post("https://api.cloudinary.com/v1_1/dgyo5rbhq/image/upload", loadedImage).then((res) => {
 
-            console.log(res.data)
+           
 
             axios.post('/api/photos',
                 {
@@ -91,7 +89,7 @@ const Upload = ({ setModalMain, setModalImage }) => {
 
         axios.post("https://api.cloudinary.com/v1_1/dgyo5rbhq/image/upload", loadedDevImage).then((res) => {
 
-            console.log(res.data)
+           
 
             axios.post('/api/websites',
                 {

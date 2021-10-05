@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./style.css"
-import { Container, Row, Col, Carousel, Accordion, AccordionCollapse, AccordionToggle, Card } from "react-bootstrap";
-import API from '../../utils/API'
+import { Container, Col} from "react-bootstrap";
 import axios from 'axios'
 
 

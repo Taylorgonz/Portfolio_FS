@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import './style.css';
-import { Container, Card, Form, Row, Col } from 'react-bootstrap';
+import { Container, Form, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import resumejpg from './resume/resume.jpg';
 import resumepdf from './resume/resume.pdf';

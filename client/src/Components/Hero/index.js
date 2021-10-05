@@ -1,6 +1,6 @@
-import React, { useRef, useState, useEffect, useContext } from "react"
+import React, { useRef } from "react"
 import "./style.css"
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link } from 'react-scroll';
 
 
@@ -22,7 +22,7 @@ const Hero = () => {
         <Container id="heroTop" className="p-0" fluid={true}>
 
             <div className="heroImg">
-                {/* <h1 className="heroTitle">TaylorGonz</h1> */}
+              
                 <Container fluid={true} className='p-0 heroContainer' >
                     <Navbar bg="" expand="lg">
                         <Container fluid={true}>

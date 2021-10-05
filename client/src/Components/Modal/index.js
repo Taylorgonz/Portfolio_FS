@@ -12,7 +12,7 @@ const Modal = ({ modalImage, setModalImage, modalMain, setModalMain }) => {
 
         }
     }
-    console.log(modalMain);
+   
 
     return (
         <div className="backdrop" onClick={(handleClick)}>

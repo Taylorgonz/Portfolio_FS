@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {Link, animateScroll as scroll} from 'react-scroll';
+import {animateScroll as scroll} from 'react-scroll';
 
 import "./style.css";
 

@@ -1,8 +1,7 @@
 import React from "react"
 import "./style.css"
-import { Container, Row, Col, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import headshot from './images/DSC02574.JPG'
-import Hero from '../Hero/index'
 
 
 const About = () => {
